@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.randomapps.randomapp.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home" >
+        <!--<action
+            android:id="@+id/action_home_to_randomGenHome"
+            app:destination="@id/nav_randomGen" />-->
+        <action
+            android:id="@+id/action_home_to_flipCoin"
+            app:destination="@id/nav_flipCoin" />
+        <action
+            android:id="@+id/action_home_to_dice"
+            app:destination="@id/nav_dice" />
+        <action
+            android:id="@+id/action_home_to_cardPicker"
+            app:destination="@id/nav_cardPicker" />
+        <action
+            android:id="@+id/action_home_to_yesNo"
+            app:destination="@id/nav_yesNo" />
+        <action
+            android:id="@+id/action_home_to_rockPaperScissors"
+            app:destination="@id/nav_rockPaperScissors" />
+        <action
+            android:id="@+id/action_home_to_seriesGenerator"
+            app:destination="@id/nav_seriesGenerator" />
+        <action
+            android:id="@+id/action_home_to_divideAndAssign"
+            app:destination="@id/nav_divideAndAssign" />
+
+        <action
+            android:id="@+id/action_home_to_randomGenNumbers"
+            app:destination="@id/nav_randomNumbers" />
+        <action
+            android:id="@+id/action_home_to_randomGenUUIDs"
+            app:destination="@id/nav_uuids" />
+        <action
+            android:id="@+id/action_home_to_randomGenDateTimes"
+            app:destination="@id/nav_randomDatesTimes" />
+        <action
+            android:id="@+id/action_home_to_randomGenStrings"
+            app:destination="@id/nav_randomPasswords" />
+        <action
+            android:id="@+id/action_home_to_randomGenColors"
+            app:destination="@id/nav_randomColors" />
+        <!--<action
+            android:id="@+id/action_home_to_randomGenNumbers"
+            app:destination="@id/randomGenNumbersFragment" />
+        <action
+            android:id="@+id/action_home_to_randomGenUUIDs"
+            app:destination="@id/randomGenUUIDsFragment" />
+        <action
+            android:id="@+id/action_home_to_randomGenDateTimes"
+            app:destination="@id/randomGenDateTimesFragment" />
+        <action
+            android:id="@+id/action_home_to_randomGenStrings"
+            app:destination="@id/randomGenStringsFragment" />
+        <action
+            android:id="@+id/action_home_to_randomGenColors"
+            app:destination="@id/randomGenColorsFragment" />-->
+    </fragment>
+
+    <!--<fragment
+        android:id="@+id/nav_randomGen"
+        android:name="com.dave.fluke.ui.RandomGenHomeFragment"
+        android:label="@string/menu_randomGenerator"
+        tools:layout="@layout/fragment_random_gen_home" />-->
+
+    <fragment
+        android:id="@+id/nav_randomNumbers"
+        android:name="com.randomapps.randomapp.ui.RandomGenNumbersFragment"
+        android:label="@string/menu_randomNumbers"
+        tools:layout="@layout/fragment_random_gen_numbers" />
+
+    <fragment
+        android:id="@+id/nav_randomPasswords"
+        android:name="com.randomapps.randomapp.ui.RandomGenStringsFragment"
+        android:label="@string/menu_randomPasswords"
+        tools:layout="@layout/fragment_random_gen_strings" />
+
+    <fragment
+        android:id="@+id/nav_randomDatesTimes"
+        android:name="com.randomapps.randomapp.ui.RandomGenDateTimesFragment"
+        android:label="@string/menu_randomDatesTimes"
+        tools:layout="@layout/fragment_random_gen_date_times" />
+
+    <fragment
+        android:id="@+id/nav_randomColors"
+        android:name="com.randomapps.randomapp.ui.RandomGenColorsFragment"
+        android:label="@string/menu_randomColors"
+        tools:layout="@layout/fragment_random_gen_colors" />
+
+    <fragment
+        android:id="@+id/nav_uuids"
+        android:name="com.randomapps.randomapp.ui.RandomGenUUIDsFragment"
+        android:label="@string/menu_uuids"
+        tools:layout="@layout/fragment_random_gen_uuids" />
+
+    <fragment
+        android:id="@+id/nav_flipCoin"
+        android:name="com.randomapps.randomapp.ui.FlipCoinFragment"
+        android:label="@string/menu_flipCoin"
+        tools:layout="@layout/fragment_flip_coin" />
+
+    <fragment
+        android:id="@+id/nav_dice"
+        android:name="com.randomapps.randomapp.ui.DiceFragment"
+        android:label="@string/menu_dice"
+        tools:layout="@layout/fragment_dice" />
+
+    <fragment
+        android:id="@+id/nav_cardPicker"
+        android:name="com.randomapps.randomapp.ui.CardPickerFragment"
+        android:label="@string/menu_cardPicker"
+        tools:layout="@layout/fragment_card_picker" />
+
+    <fragment
+        android:id="@+id/nav_seriesGenerator"
+        android:name="com.randomapps.randomapp.ui.SeriesGeneratorFragment"
+        android:label="@string/menu_seriesGenerator"
+        tools:layout="@layout/fragment_series_generator" >
+        <action
+            android:id="@+id/action_seriesGenerator_to_newList"
+            app:destination="@id/newListFragment2" />
+        <action
+            android:id="@+id/action_seriesGenerator_to_listHolder"
+            app:destination="@id/listHolderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_divideAndAssign"
+        android:name="com.randomapps.randomapp.ui.DivideAndAssignFragment"
+        android:label="@string/menu_divideAndAssign"
+        tools:layout="@layout/fragment_divide_and_assign" >
+        <action
+            android:id="@+id/action_divideAndAssign_to_newList"
+            app:destination="@id/newListFragment2" />
+        <action
+            android:id="@+id/action_divideAndAssign_to_listHolder"
+            app:destination="@id/listHolderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_yesNo"
+        android:name="com.randomapps.randomapp.ui.YesNoTrueFalseFragment"
+        android:label="@string/menu_yesNo"
+        tools:layout="@layout/fragment_yes_no_true_false" />
+
+    <fragment
+        android:id="@+id/nav_rockPaperScissors"
+        android:name="com.randomapps.randomapp.ui.RockPaperScissorsFragment"
+        android:label="@string/menu_rockPaperScissors"
+        tools:layout="@layout/fragment_rock_paper_scissors" />
+
+    <fragment
+        android:id="@+id/nav_savedLists"
+        android:name="com.randomapps.randomapp.ui.ViewListsFragment"
+        android:label="@string/menu_savedLists"
+        tools:layout="@layout/fragment_view_lists" >
+        <action
+            android:id="@+id/action_savedLists_to_listHolder"
+            app:destination="@id/listHolderFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newListFragment2"
+        android:name="com.randomapps.randomapp.ui.NewListFragment"
+        android:label="fragment_new_list"
+        tools:layout="@layout/fragment_new_list" >
+        <action
+            android:id="@+id/action_newList_to_seriesGenerator"
+            app:destination="@id/nav_seriesGenerator"
+            app:popUpTo="@+id/nav_seriesGenerator" />
+        <action
+            android:id="@+id/action_newList_to_divideAndAssign"
+            app:destination="@id/nav_divideAndAssign"
+            app:popUpTo="@+id/nav_divideAndAssign" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.randomapps.randomapp.MainActivity"
+        android:label="activity_homepage"
+        tools:layout="@layout/activity_homepage" />
+    <fragment
+        android:id="@+id/listHolderFragment"
+        android:name="com.randomapps.randomapp.ui.ListHolderFragment"
+        android:label="@string/text_listHolder"
+        tools:layout="@layout/fragment_list_holder">
+        <argument
+            android:name="UserList"
+            android:defaultValue="@null"
+            app:argType="Models.UserList"
+            app:nullable="true" />
+        <argument
+            android:name="mode"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_listHolder_to_savedLists"
+            app:destination="@id/nav_savedLists" />
+    </fragment>
+    <fragment
+        android:id="@+id/randomGenColorsFragment"
+        android:name="com.randomapps.randomapp.ui.RandomGenColorsFragment"
+        android:label="Random Colors"
+        tools:layout="@layout/fragment_random_gen_colors" />
+    <fragment
+        android:id="@+id/randomGenDateTimesFragment"
+        android:name="com.randomapps.randomapp.ui.RandomGenDateTimesFragment"
+        android:label="Random Dates &amp; Times"
+        tools:layout="@layout/fragment_random_gen_date_times" />
+    <fragment
+        android:id="@+id/randomGenNumbersFragment"
+        android:name="com.randomapps.randomapp.ui.RandomGenNumbersFragment"
+        android:label="Random Numbers"
+        tools:layout="@layout/fragment_random_gen_numbers" />
+    <fragment
+        android:id="@+id/randomGenStringsFragment"
+        android:name="com.randomapps.randomapp.ui.RandomGenStringsFragment"
+        android:label="Random Passwords"
+        tools:layout="@layout/fragment_random_gen_strings" />
+    <fragment
+        android:id="@+id/randomGenUUIDsFragment"
+        android:name="com.randomapps.randomapp.ui.RandomGenUUIDsFragment"
+        android:label="Unique Ids"
+        tools:layout="@layout/fragment_random_gen_uuids" />
+</navigation>

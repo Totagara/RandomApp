@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2EB9FF</color>
+    <!--<color name="colorPrimaryDark">#29A7E6</color>-->
+    <!--<color name="colorPrimaryDark">#007fff</color>-->
+    <color name="colorPrimaryDark">#005fbf</color>
+    <!--<color name="colorAccent">#D66F16</color>-->
+    <color name="colorAccent">#E65100</color>
+    <color name="cardBackground">#0A87E7</color>
+    <color name="butBackground">#1F7BC5</color>
+
+    <color name="featureTileBackground">#F3EFEB</color>
+    <color name="featureTileBackground1">#7CC7DF</color>
+    <color name="tileBackground">#e6e6e6</color>
+    <!--<color name="featureTileBackground2">#e6e6e6</color>-->
+    <color name="featureTileBackground3">#a6a6a6</color>
+
+
+    <!--Monolithic shades-->
+    <color name="colorDarkest">#107896</color>
+    <color name="colorDarker">#1287A8</color>
+    <color name="colorLight">#1496BB</color>
+    <color name="colorLighter">#43ABC9</color>
+    <color name="red">#EC3838</color>
+</resources>

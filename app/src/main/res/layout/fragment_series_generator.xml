@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.SeriesGeneratorFragment">
+
+    <!--Options layout for Random number-->
+    <LinearLayout
+        android:id="@+id/seriesGenerationOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        style="@style/OptionsLayoutStyle"
+        android:background="@android:color/white">
+        <LinearLayout
+            android:id="@+id/seriesSizeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/howManySeriesEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/text_how_many_series"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/seriesSizeEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:hint="@string/text_items_per_series"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/excludeSetsWithSameItemsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/text_exclude_same_items_set" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/excludeGeneratedItemsCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/text_exclude_generated_items_for_subsequent_sets" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp">
+
+            <TextView android:id="@+id/selectSeriesGenListTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="@string/text_Select_list"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"/>
+
+            <Spinner
+                android:id="@+id/selectSeriesGenListSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_toRightOf="@id/selectSeriesGenListTextView"
+                android:layout_margin="3dp"
+                android:minWidth="100dp"
+                android:maxWidth="150dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/butNewList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_New_list"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:padding="5dp"
+                android:elevation="10dp"
+                android:background="@drawable/roundedgenericbutton" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/selectedListItemsLayout"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:fillViewport="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/selectedItemsTextInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:minLines="40"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <EditText
+                        android:id="@+id/selectedListItemsEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:enabled="false"
+                        android:gravity="start"
+                        android:minLines="4"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"
+                        android:singleLine="false"
+                        android:hint="@string/text_selected_list_items"
+                        android:scrollHorizontally="false"
+                        android:scrollbars="vertical"
+                        android:textSize="16sp"
+                        android:layout_weight="9"
+                        android:inputType="number"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Result Layout for other Random Generators-->
+    <LinearLayout
+        android:id="@+id/resultsLayoutForSeries"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        style="@style/ResultsLayoutStyle"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:minLines="40"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <EditText
+                    android:id="@+id/resultTextBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:gravity="start"
+                    android:minLines="40"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:singleLine="false"
+                    android:hint="@string/hint_text_results"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:textSize="16sp"
+                    android:layout_weight="9"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!--History Layout-->
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/HistoryLayoutStyle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/resultsLayoutForNumbers"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/butGenerateRandomSeries"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/but_text_generate"
+                android:layout_weight="8"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundedgenericbutton" />
+            <ImageView
+                android:id="@+id/copyImageView"
+                android:layout_width="wrap_content"
+                android:tooltipText="@string/text_copy"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_copy"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundedgenericbutton" />
+            <ImageView
+                android:id="@+id/shareImageView"
+                android:layout_width="wrap_content"
+                android:tooltipText="@string/text_share"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_share"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:background="@drawable/roundedgenericbutton" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

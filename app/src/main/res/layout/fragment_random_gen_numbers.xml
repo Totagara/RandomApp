@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.RandomGenNumbersFragment">
+
+    <!--Options layout for Random number-->
+    <LinearLayout
+        android:id="@+id/numberOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        style="@style/OptionsLayoutStyle"
+        android:background="@android:color/white">
+        <LinearLayout
+            android:id="@+id/minMaxQuantityLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/minEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="3dp"
+                    android:hint="@string/hint_min_range"
+                    android:inputType="numberSigned"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/maxEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="3dp"
+                    android:hint="@string/hint_max_range"
+                    android:inputType="numberSigned"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/howManyEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="3dp"
+                    android:hint="@string/hint_how_many"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/repeatDecimalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/repeatCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text="@string/cb_text_repeat" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/decimalCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginRight="5dp"
+                android:text="@string/cb_text_decimal" />
+
+            <LinearLayout
+                android:id="@+id/precisionLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:visibility="invisible"
+                android:orientation="horizontal">
+
+                <TextView android:id="@+id/precisionTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:text="@string/text_precision" />
+
+                <!--Classic spinner-->
+                <Spinner
+                    android:id="@+id/precisionSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:entries="@array/precisionValues"
+                    android:prompt="@string/selectPrecision"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sortLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/sortCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="@string/cb_text_sort" />
+
+            <RadioGroup
+                android:id="@+id/sortRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:visibility="invisible">
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/ascRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rb_text_ascending" />
+
+                <androidx.appcompat.widget.AppCompatRadioButton
+                    android:id="@+id/desRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rb_text_decending" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Result Layout for other Random Generators-->
+    <LinearLayout
+        android:id="@+id/resultsLayoutForNumbers"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        style="@style/ResultsLayoutStyle">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:minLines="40"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <EditText
+                    android:id="@+id/resultTextBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:gravity="start"
+                    android:minLines="40"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:singleLine="false"
+                    android:hint="@string/hint_text_results"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:textSize="16sp"
+                    android:layout_weight="9"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!--History Layout-->
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/HistoryLayoutStyle" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/resultsLayoutForNumbers"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/butGenerateRandom"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/but_text_generate"
+                android:layout_weight="8"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundedgenericbutton" />
+            <ImageView
+                android:id="@+id/copyImageView"
+                android:layout_width="wrap_content"
+                android:tooltipText="@string/text_copy"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_copy"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundedgenericbutton" />
+            <ImageView
+                android:id="@+id/shareImageView"
+                android:layout_width="wrap_content"
+                android:tooltipText="@string/text_share"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_share"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundedgenericbutton" />
+
+            <!--Results separator-->
+            <ImageView
+                android:id="@+id/resSeparatorImageView"
+                android:layout_width="wrap_content"
+                android:tooltipText="@string/text_format"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_format_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/roundedgenericbutton" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

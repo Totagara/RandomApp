@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/app_home"
+            android:title="@string/menu_home" />
+
+        <!--<item
+            android:id="@+id/nav_randomGen"
+            android:icon="@drawable/app_randomgenerator"
+            android:title="@string/menu_randomGenerator" />-->
+
+        <item
+            android:id="@+id/nav_randomNumbers"
+            android:icon="@drawable/app_random_numbers"
+            android:title="@string/menu_randomNumbers" />
+
+        <item
+            android:id="@+id/nav_randomPasswords"
+            android:icon="@drawable/app_random_passwords"
+            android:title="@string/menu_randomPasswords" />
+
+        <item
+            android:id="@+id/nav_dice"
+            android:icon="@drawable/app_dice"
+            android:title="@string/menu_dice" />
+
+        <item
+            android:id="@+id/nav_randomDatesTimes"
+            android:icon="@drawable/app_random_dates_times"
+            android:title="@string/menu_randomDatesTimes" />
+
+        <item
+            android:id="@+id/nav_randomColors"
+            android:icon="@drawable/app_random_colors"
+            android:title="@string/menu_randomColors" />
+
+        <item
+            android:id="@+id/nav_cardPicker"
+            android:icon="@drawable/app_cardpicker"
+            android:title="@string/menu_cardPicker" />
+
+        <item
+            android:id="@+id/nav_flipCoin"
+            android:icon="@drawable/app_coin"
+            android:title="@string/menu_flipCoin" />
+
+        <item
+            android:id="@+id/nav_uuids"
+            android:icon="@drawable/app_uuids"
+            android:title="@string/menu_uuids" />
+
+        <item
+            android:id="@+id/nav_seriesGenerator"
+            android:icon="@drawable/app_series"
+            android:title="@string/menu_seriesGenerator" />
+
+        <item
+            android:id="@+id/nav_divideAndAssign"
+            android:icon="@drawable/app_teams"
+            android:title="@string/menu_divideAndAssign" />
+
+        <item
+            android:id="@+id/nav_yesNo"
+            android:icon="@drawable/app_yesno"
+            android:title="@string/menu_yesNo" />
+
+        <item
+            android:id="@+id/nav_rockPaperScissors"
+            android:icon="@drawable/app_rps"
+            android:title="@string/menu_rockPaperScissors" />
+
+        <item
+            android:id="@+id/nav_savedLists"
+            android:icon="@drawable/app_lists"
+            android:title="@string/menu_savedLists" />
+
+    </group>
+</menu>

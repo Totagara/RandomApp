@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.RandomGenStringsFragment">
+
+    <!--Options layout for Random password/string-->
+    <LinearLayout
+        android:id="@+id/passwordOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:background="@android:color/white"
+        style="@style/OptionsLayoutStyle">
+
+        <LinearLayout
+            android:id="@+id/minMaxLengthLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/minLengthEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="3dp"
+                    android:hint="@string/hint_min_length"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/maxLengthEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="3dp"
+                    android:hint="@string/hint_max_length"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/quantityStringsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="3dp"
+                    android:hint="@string/hint_how_many"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/specialCharsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:gravity="center">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/specialCharsCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cb_text_special_chars" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/specialCharsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="3dp"
+                    android:hint="@string/hint_include_special_chars"
+                    android:singleLine="true" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upperLowerDecimalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/upperCaseCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cb_text_caps_A_Z" />
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/lowerCaseCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cb_text_small_a_z" />
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/digitsCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/rb_text_digits_0_9" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--Result Layout for other Random Generators-->
+    <LinearLayout
+        android:id="@+id/resultsLayoutForNumbers"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        style="@style/ResultsLayoutStyle">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:scrollHorizontally="false"
+                android:scrollbars="vertical"
+                android:minLines="40"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <EditText
+                    android:id="@+id/resultTextBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:enabled="false"
+                    android:gravity="start"
+                    android:minLines="40"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:singleLine="false"
+                    android:hint="@string/hint_text_results"
+                    android:fontFamily="sans-serif"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:textSize="16sp"
+                    android:layout_weight="9"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <!--History Layout-->
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/HistoryLayoutStyle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/resultsLayoutForNumbers"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/butGenerateRandom"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/but_text_generate"
+                android:layout_weight="8"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundedgenericbutton" />
+            <ImageView
+                android:id="@+id/copyImageView"
+                android:layout_width="wrap_content"
+                android:tooltipText="@string/text_copy"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_copy"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundedgenericbutton"  />
+            <ImageView
+                android:id="@+id/shareImageView"
+                android:layout_width="wrap_content"
+                android:tooltipText="@string/text_share"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_share"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundedgenericbutton"  />
+
+
+            <!--Results separator-->
+            <ImageView
+                android:id="@+id/resSeparatorImageView"
+                android:layout_width="wrap_content"
+                android:tooltipText="@string/text_format"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_format_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/roundedgenericbutton" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

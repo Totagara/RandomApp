@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.RandomGenColorsFragment">
+
+    <!--Options layout for Random Colors-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/OptionsLayoutStyle"
+        android:background="@android:color/white">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/howManyColorsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="3dp"
+                android:hint="@string/hint_how_many"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/maxColorsLimitTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/text_max_limited_to"/>
+    </LinearLayout>
+
+    <!--Result Layout for other Random Colors-->
+    <LinearLayout
+        android:id="@+id/resultsLayoutForColors"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        style="@style/ResultsLayoutStyle"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/colorDisplayListLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center_horizontal">
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!--History Layout-->
+    <LinearLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        style="@style/HistoryLayoutStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif"
+            android:text="@string/individual_color_copy_msg"
+            android:paddingBottom="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/resultsLayoutForNumbers"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/butGenerateRandom"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/but_text_generate"
+                android:layout_weight="8"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundedgenericbutton" />
+            <ImageView
+                android:id="@+id/copyImageView"
+                android:layout_width="wrap_content"
+                android:tooltipText="@string/text_copy"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_copy"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/roundedgenericbutton" />
+            <ImageView
+                android:id="@+id/shareImageView"
+                android:layout_width="wrap_content"
+                android:tooltipText="@string/text_share"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_share"
+                android:layout_weight="1"
+                android:background="@drawable/roundedgenericbutton" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

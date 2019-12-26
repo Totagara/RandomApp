@@ -1,0 +1,70 @@
+<resources>
+    <!-- Theme Preference -->
+    <string-array name="theme_entries">
+        <item>@string/text_light_theme</item>
+        <item>@string/text_dark_theme</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>light_theme</item>
+        <item>dark_theme</item>
+    </string-array>
+
+    <!-- Language Preference -->
+    <string-array name="language_entries">
+        <item>English</item>
+        <item>India - ಕನ್ನಡ</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>lang_english</item>
+        <item>lang_kannada</item>
+    </string-array>
+
+    <string-array name="precisionValues">
+        <item>@string/precision_1</item>
+        <item>@string/precision_2</item>
+        <item>@string/precision_3</item>
+        <item>@string/precision_4</item>
+        <item>@string/precision_5</item>
+        <item>@string/precision_6</item>
+        <item>@string/precision_7</item>
+        <item>@string/precision_8</item>
+        <item>@string/precision_9</item>
+        <item>@string/precision_10</item>
+    </string-array>
+
+    <string-array name="numberOfDices">
+        <item>@string/number_of_dice_1</item>
+        <item>@string/number_of_dice_2</item>
+        <item>@string/number_of_dice_3</item>
+        <item>@string/number_of_dice_4</item>
+        <item>@string/number_of_dice_5</item>
+        <item>@string/number_of_dice_6</item>
+        <item>@string/number_of_dice_7</item>
+        <item>@string/number_of_dice_8</item>
+        <item>@string/number_of_dice_9</item>
+    </string-array>
+
+    <string-array name="deckTypes">
+        <item>@string/text_cards_52</item>
+        <item>@string/text_cards_54</item>
+        <item>@string/text_cards_56</item>
+    </string-array>
+
+    <string-array name="yesNoTypes">
+        <item>@string/text_yes_no</item>
+        <item>@string/text_true_false</item>
+    </string-array>
+
+    <string-array name="rpsTypes">
+        <item>@string/text_rps</item>
+        <item>@string/text_rpsls</item>
+    </string-array>
+
+    <string-array name="coinTypes">
+        <item>@string/text_indian_coin</item>
+        <item>@string/text_american_coin</item>
+        <item>@string/text_canadian_coin</item>
+    </string-array>
+</resources>

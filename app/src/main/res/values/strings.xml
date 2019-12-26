@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY contactMailId "contact.randomapp@gmail.com">
+    <!ENTITY subject "RandomApp - Feedback">
+    <!ENTITY body "">
+    ]>
+<resources>
+    <!--Generic texts-->
+
+    <!--App names-->
+    <string name="app_name">RandomApp</string>
+    <string name="text_version">Version</string>
+    <string name="version_value">1.0.18</string>
+    <string name="app_randomGenerator">Random Generators</string>
+    <string name="app_flip_coin">Flip Coin</string>
+    <string name="app_dice">Dice</string>
+    <string name="app_cardPicker">Card Picker</string>
+    <string name="app_seriesGenerator">Series Generator</string>
+    <string name="app_teamsGenerator">Teams Formation</string>
+    <string name="app_yesNo">Yes - No</string>
+    <string name="app_rps">Rock-Paper-Scissors</string>
+
+    <string name="app_randomNumbers">Random Numbers</string>
+    <string name="app_randomPasswords">Random Passwords</string>
+    <string name="app_randomDatesTimes">Random Dates &amp; Times</string>
+    <string name="app_randomColors">Random Colors</string>
+    <string name="app_uuids">Unique Ids</string>
+
+    <!--Menu items-->
+    <string name="menu_home">Home</string>
+    <string name="menu_randomGenerator">Random Generators</string>
+    <string name="menu_flipCoin">Flip coin</string>
+    <string name="menu_dice">Dice</string>
+    <string name="menu_cardPicker">Card picker</string>
+    <string name="menu_seriesGenerator">Series Generator</string>
+    <string name="menu_divideAndAssign">Teams Formation</string>
+    <string name="menu_yesNo">Yes - No</string>
+    <string name="menu_rockPaperScissors">Rock-Paper-Scissors</string>
+    <string name="menu_savedLists">Saved lists</string>
+
+    <string name="menu_randomNumbers">Random Numbers</string>
+    <string name="menu_randomPasswords">Random Passwords</string>
+    <string name="menu_randomDatesTimes">Random Dates &amp; Times</string>
+    <string name="menu_randomColors">Random Colors</string>
+    <string name="menu_uuids">Unique Ids</string>
+
+
+
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="text_language">Select Language</string>
+    <string name="text_theme">Theme</string>
+    <string name="text_max_limited_to">Max limited to </string>
+
+    <string name="action_about">About</string>
+    <string name="action_settings">Settings</string>
+    <string name="hint_how_many">How many</string>
+    <string name="cb_text_repeat">Repeat</string>
+    <string name="hint_text_results">Results</string>
+    <string name="but_text_generate">Generate</string>
+    <string name="text_copy">Copy</string>
+    <string name="text_share">Share</string>
+    <string name="text_format">Format</string>
+    <string name="text_results">Results</string>
+    <string name="results_copied_success_msg">Results copied to Clipboard</string>
+    <string name="value_empty_error_msg">Value can not be empty</string>
+    <string name="value_greater_than_zero_error_msg">Value should be greater than zero</string>
+    <string name="sort_order_not_selected_error_msg">Please select sort order</string>
+    <string name="values_range_error_msg">Value should be within the range of %1$d and %2$d</string>
+    <string name="max_is_more_than_min_error_msg">Max value should be more than min value</string>
+    <string name="dialog_header_usage_notice">Usage notice</string>
+    <string name="button_ok">Ok</string>
+    <string name="valid_input_required_error">Valid %1$s required</string>
+    <string name="add_list_error">Please add the list to generate the %1$s</string>
+    <string name="text_selected_listItems">Selected list items: </string>
+    <string name="text_Select_list">Select list:</string>
+    <string name="text_New_list">New list</string>
+    <string name="text_selected_list_items">Selected list items</string>
+    <string name="list_empty_msg">List cannot be empty</string>
+    <string name="text_result">Result</string>
+    <string name="but_save">Save</string>
+    <string name="but_cancel">Cancel</string>
+
+    <!--Random Generator Home-->
+    <string name="text_random_numbers">Random Numbers</string>
+    <string name="text_random_strings">Random Passwords</string>
+    <string name="text_random_dates_times">Random Dates &amp; Times</string>
+    <string name="text_random_colors">Random Colors</string>
+    <string name="text_UUIDs">UUIDs</string>
+
+    <!--Random Numbers Generator -->
+    <string name="hint_min_range">Range from</string>
+    <string name="hint_max_range">Range to</string>
+    <string name="cb_text_decimal">Decimal</string>
+    <string name="text_precision">Precision:</string>
+    <string name="cb_text_sort">Sort</string>
+    <string name="rb_text_ascending">Ascending</string>
+    <string name="rb_text_decending">Decending</string>
+    <string name="selectPrecision">Select precision</string>
+    <string name="max_generation_limit_error_msg">Only upto %1$d numbers can be generated</string>
+    <string name="generation_range_exceeds_error_msg">Can not have more than %1$d unique random numbers</string>
+    <string name="precision_1">1 (0.0)</string>
+    <string name="precision_2">2 (0.00)</string>
+    <string name="precision_3">3 (0.000)</string>
+    <string name="precision_4">4 (0.0000)</string>
+    <string name="precision_5">5 (0.00000)</string>
+    <string name="precision_6">6 (0.000000)</string>
+    <string name="precision_7">7 (0.0000000)</string>
+    <string name="precision_8">8 (0.00000000)</string>
+    <string name="precision_9">9 (0.000000000)</string>
+    <string name="precision_10">10 (0.0000000000)</string>
+
+    <!--Random Strings Generator -->
+    <string name="hint_min_length">Min length</string>
+    <string name="hint_max_length">Max length</string>
+    <string name="cb_text_caps_A_Z">Caps [A-Z]</string>
+    <string name="cb_text_small_a_z">Small [a-z]</string>
+    <string name="rb_text_digits_0_9">Digits [0-9]</string>
+    <string name="cb_text_special_chars">Special Chars</string>
+    <string name="text_include">Include:</string>
+    <string name="hint_special_chars">Special Chars</string>
+    <string name="hint_include_special_chars">Include special chars</string>
+    <string name="no_char_type_selected_error_msg">At least one character type checkbox should be selected</string>
+    <string name="string_len_range_error_msg">Value should be within 1-100</string>
+    <string name="max_strings_generation_limit_error_msg">Only upto %1$d strings can be generated</string>
+    <string name="min_special_char_required_error_msg">At least one special character required when special characters enabled</string>
+
+    <!--Random Dates & times Generator -->
+    <string name="max__dateTime_is_more_than_min_msg">End %1$s should be greater than start %2$s</string>
+    <string name="text_date">Date</string>
+    <string name="text_time">Time</string>
+    <string name="text_date_and_time">date &amp; time</string>
+    <string name="text_date_time_combinations">date &amp; time combinations</string>
+    <string name="text_dates">Dates</string>
+    <string name="text_times">Times</string>
+    <string name="dateTime_range_exceed_error_msg">Can not have more than %1$d unique %2$s</string>
+    <string name="no_date_time_selected_error">Either date or time checkbox should be selected</string>
+    <string name="max_generation_limit_error_msg_dateTime">Only upto %1$d dates or times can be generated</string>
+    <string name="cb_text_date">Date</string>
+    <string name="cb_text_time">Time</string>
+    <string name="hint_start_date">Start date</string>
+    <string name="hint_end_date">End date</string>
+    <string name="hint_start_time">Start time</string>
+    <string name="hint_end_time">End time</string>
+
+    <!--Random colors Generator -->
+    <string name="individual_color_copy_msg">Tap on individual color code text to copy</string>
+    <string name="no_colors_generated_error">No color generated to share</string>
+    <string name="colors_range_exceed_error_msg">Can not have more than %1$d colors</string>
+    <string name="color_code_copied_msg">Color code %1$s copied</string>
+    <string name="text_color_code">Color code</string>
+
+    <!--UUIDs Generator -->
+    <string name="max_generation_limit_error_msg_UUIDs">Only upto %1$d UUIDs can be generated</string>
+
+    <!--Flip coin -->
+    <string name="result_heads">Heads</string>
+    <string name="result_tails">Tails</string>
+    <string name="text_select_coin">Select coin:</string>
+    <string name="text_flip_coin">Flip coin</string>
+    <string name="text_indian_coin">Indian coin</string>
+    <string name="text_american_coin">American coin</string>
+    <string name="text_canadian_coin">Canadian coin</string>
+
+    <!--Dice -->
+    <string name="result_total_msg">Total: %1$d</string>
+    <string name="text_dice_count">How many dice:</string>
+    <string name="selectNumberofDices">Select number of Dices</string>
+    <string name="text_roll_dice">Roll dice</string>
+    <string name="number_of_dice_1">1</string>
+    <string name="number_of_dice_2">2</string>
+    <string name="number_of_dice_3">3</string>
+    <string name="number_of_dice_4">4</string>
+    <string name="number_of_dice_5">5</string>
+    <string name="number_of_dice_6">6</string>
+    <string name="number_of_dice_7">7</string>
+    <string name="number_of_dice_8">8</string>
+    <string name="number_of_dice_9">9</string>
+
+    <!-- card picker -->
+    <string name="cards_over_msg">Cards deck is empty. Click OK to shuffle and reset the deck</string>
+    <string name="cards_over_header">Cards over</string>
+    <string name="cardname_spade">Spade</string>
+    <string name="cardname_club">Club</string>
+    <string name="cardname_diamond">Diamond</string>
+    <string name="cardname_heart">Heart</string>
+    <string name="cardname_joker">Joker</string>
+    <string name="cardname_ace">Ace</string>
+    <string name="cardname_jack">Jack</string>
+    <string name="cardname_queen">Queen</string>
+    <string name="cardname_king">King</string>
+    <string name="exclude_generated_cards_msg">Exclude generated cards</string>
+    <string name="text_select_deck">Select deck:</string>
+    <string name="text_selected_card">Selected Card</string>
+    <string name="text_generate_card">Generate Card</string>
+    <string name="text_cards_52">52 Cards</string>
+    <string name="text_cards_54">54 Cards(2J)</string>
+    <string name="text_cards_56">56 Cards(4J)</string>
+
+    <!-- Series generation -->
+    <string name="text_series">series</string>
+    <string name="series_size_morethan_list_items_error">Series size cannot be more than list items count</string>
+    <string name="max_generation_limit_error_msg_series_generation">Only upto %1$d series can be generated</string>
+    <string name="series_range_exceed_error_msg">Can not have more than %1$d series</string>
+    <string name="text_how_many_series">How many series</string>
+    <string name="text_items_per_series">Items per series</string>
+    <string name="text_exclude_same_items_set">Exclude same items set</string>
+    <string name="text_exclude_generated_items_for_subsequent_sets">Exclude generated items for subsequent sets</string>
+
+    <!-- divide and assign -->
+    <string name="text_teams">teams</string>
+    <string name="team_size_morethan_list_items_error">Team size can not be more than the selected list items count</string>
+    <string name="number_0f_teams__morethan_list_items_error">Number of teams can not be more than the selected list items count</string>
+    <string name="text_how_many_teams">How many teams</string>
+    <string name="text_members_per_teams">Members per teams</string>
+
+    <!-- Yes-No -->
+    <string name="result_yes">Yes</string>
+    <string name="result_no">No</string>
+    <string name="result_true">True</string>
+    <string name="result_false">False</string>
+    <string name="text_result_type">Result type:</string>
+    <string name="text_yes_no">Yes-No</string>
+    <string name="text_true_false">True-False</string>
+
+    <!-- Rock-Paper_scissors -->
+    <string name="result_rock">Rock</string>
+    <string name="result_paper">Paper</string>
+    <string name="result_scissors">Scissors</string>
+    <string name="result_lizard">lizard</string>
+    <string name="result_spock">Spock</string>
+    <string name="text_rps">R-P-S</string>
+    <string name="text_rpsls">R-P-S-L-S</string>
+
+    <!-- Lists -->
+    <string name="list_updated_success_msg">List updated successfully</string>
+    <string name="list_updated_error_msg">Error occurred while updating the List</string>
+    <string name="ListAdditionSuccessMessage">List added successfully</string>
+    <string name="ListAdditionFailedMessage">Error occured while creating the list</string>
+    <string name="empty_list_name_error">Name can not be empty</string>
+    <string name="no_list_items_error">At least one item should exist in the list</string>
+    <string name="text_listName">List name</string>
+    <string name="text_addItem">Add item</string>
+    <string name="but_viewSavedLists">View saved lists</string>
+    <string name="text_listHolder">List Info</string>
+    <string name="text_my_lists">My lists</string>
+    <string name="text_listName_colon">List name:</string>
+
+    <!--Settings-->
+    <string name="text_light_theme">Light theme</string>
+    <string name="text_dark_theme">Dark theme</string>
+    <string name="text_about">About</string>
+
+    <!-- new Strings -->
+    <string name="text_last_updated">Last updated:</string>
+    <string name="text_items">items</string>
+    <string name="label_series">Series </string>
+    <string name="text_dates_and_times">Dates and Times</string>
+    <string name="text_random">Random</string>
+    <string name="text_generating">Generating</string>
+    <string name="text_generating_decimals">Generating Decimal Numbers: </string>
+    <string name="text_generating_integers">Generating Whole Numbers: </string>
+    <string name="text_generating_teams">Generating Random Teams: </string>
+    <string name="text_generating_series">Generating Random Series: </string>
+    <string name="text_generating_strings">Generating Random Strings: </string>
+    <string name="text_generating_UUIDs">Generating UUIDs: </string>
+    <string name="text_formatting">Formatting</string>
+    <string name="text_formatting_results">Formatting the results </string>
+
+    <!--<string name="text_aboutForUsersContent">
+        "First things first,\n\n"
+        "If you are reading this means you have come till here."
+        "Thanks for your time and support on exploring this app."
+        "Please <a href="mailto:contact.randomapp@gmail.coms?subject=RandomApp%20-%20Query&amp;body=Thanks%20for%20reaching%20out!.%20Please%20enter%20your%20details%20below.">reach out to me</a> if you have any concerns related to app improvements, suggestions, bugs to be fixed, new features to be added, any corrections to be made in the existing translations or anything related to app.\n"
+        "I am looking for volunteers who can help me in adding more languages support so it would be great if you could help me in translating this app to your language.\n"
+        "Thanks again."
+    </string>-->
+    <string name="text_aboutForUsersContent">
+        "First things first - If you’re reading this, it means you have come till here! I appreciate your time for exploring this app."
+        "Please feel free to <a href="mailto:&contactMailId;?subject=&subject;&amp;body=&body;">reach out to me</a> if you have any suggestions or feedback to share, to recommend feature enhancements, to suggest new features to be added or just to connect to say hi."
+        "I am currently looking for volunteers to help me make this app available for more languages. Thank again for your time."
+    </string>
+
+    <string name="text_aboutAppInfoIntroductionContent">
+        "<b>Application info:</b>\n"
+	    "The Random app is about randomness theme, it is packed with numerous features that can be applied to day to day tasks. This app features are explained below:"
+    </string>
+
+    <string name="text_aboutAppInfo_randomNumbers">
+    "<b>Random Numbers</b>\n"
+    "1. User can generate Random numbers which can be either Whole numbers or Decimal numbers.\n"
+    "2. For Decimal numbers generation, user can select precision up to 10 decimal points.\n"
+    "3. Generated results can be sorted in ascending order or descending order.\n"
+    "4. Up to 50000 Random numbers can be generated in one go.\n"
+    "5. User has option to generate repeatable numbers or unique numbers.\n"
+    "6. All the generated results can be copied, shared, formatted to be in linear comma separated format or in list format where every item is in new line."
+    </string>
+
+    <string name="text_aboutAppInfo_randomPasswords">
+    "<b>Random Passwords</b>\n"
+    "1. User can generate Random passwords in which each password can have length up to 100 characters.\n"
+    "2. User can set minimum and maximum range for passwords length.\n"
+    "3. Passwords can contain any combinations of Capital letters, Small letters, Numbers and Special characters.\n"
+    "4. User can specify the Special characters set for passwords generation.\n"
+    "5. Up to 10000 unique random passwords can be generated in one go.\n"
+    "6. All the generated results can be copied, shared, formatted to be in linear comma separated format or in list format where every item is in new line."
+    </string>
+
+    <string name="text_text_aboutAppInfo_dice">
+    "<b>Dice Rolling</b>\n"
+    "1. Dice rolling is always a fun. If you don’t find the Dice quickly, no worries, you can imitate traditional dice rolling on your mobile device using this app. Isn’t that cool!\n"
+    "2. Up to 9 dice can be rolled together.\n"
+    "3. User can see the individual dice results as well as total of all the dice roll."
+    </string>
+
+    <string name="text_aboutAppInfo_randomDatesTimes">
+    "<b>Random Dates and Times</b>\n"
+    "1. User can generate Random dates and times within the selected range.\n"
+    "2. Up to 50000 unique Random dates and times can be generated in one go.\n"
+    "3. All the generated results can be copied, shared, formatted to be in linear comma separated format or in list format where every item is in new line."
+    </string>
+
+    <string name="text_aboutAppInfo_randomColors">
+    "<b>Random Colors</b>\n"
+    "1. User can generate unique random colors on well displayed tiles.\n"
+    "2. Each color or all the generated colors can be copied using their hexadecimal color codes.\n"
+    "3. Up to 50 unique colors can be generated in one go.\n"
+    </string>
+
+    <string name="text_text_aboutAppInfo_cardPicker">
+    "<b>Card Picker</b>\n"
+    "1. User can randomly pick a card from selected deck.\n"
+    "2. User can select a deck from 3 options(52 cards, 54 cards including 2 Jokers, 56 cards including 4 Jokers).\n"
+    "3. User can keep fetching a random card from whole deck repeatedly with all cards in it every time or user can keep fetching a random card from the remaining cards of the deck (Already picked cards will be removed for subsequent picks)."
+    </string>
+
+    <string name="text_text_aboutAppInfo_flipcoin">
+    "<b>Flip coin</b>\n"
+    "1. User can imitate flipping the coin to get random results. It looks like the user is flipping the real coin.\n"
+    "2. User has option to pick different country coin to flip."
+    </string>
+
+    <string name="text_aboutAppInfo_randomUUIDs">
+    "<b>Unique Ids</b>\n"
+    "1. User can generate Unique Ids, whenever user needs unique identifiers.\n"
+    "2. Up to 10000 unique Ids can be generated in one go.\n"
+    "3. All the generated results can be copied, shared, formatted to be in linear comma separated format or in list format where every item is in new line."
+    </string>
+
+    <string name="text_text_aboutAppInfo_seriesGenerator">
+    "<b>Series Generator and Shuffler</b>\n"
+    "1. Any selected list can be shuffled randomly.\n"
+    "2. Users can try to pick single item from the entire list randomly. (like lucky draw)\n"
+    "3. Multiple random series can be generated with selected list with flexible series size (Items per series).\n"
+    "4. User can exclude the series set which are having same items.\n"
+    "5. User can exclude the items which are already part of generated series for subsequent series (Unique series with unique items) generation.\n"
+    "6. User can see the selected input list details on the same screen for quick glance.\n"
+    "7. All the generated results can be copied and shared."
+    </string>
+
+    <string name="text_text_aboutAppInfo_teamsGenerator">
+    "<b>Teams Formation</b>\n"
+    "1. Users can generate teams out of the selected list.\n"
+    "2. User has option to provide the team size (members per team) or number of teams to be generated.\n"
+    "3. User can see the selected input list details on the same screen for quick glance.\n"
+    "4. All the generated results can be copied and shared."
+    </string>
+
+    <string name="text_text_aboutAppInfo_yesNo">
+    "<b>Yes-No or True-False</b>\n"
+    "1. Whenever you are confused and want your mobile device to try the luck of Yes-No/True-False for you then you can use Yes-No random results generation.\n"
+    "2. You can select True-False or Yes-No option for random results generation."
+    </string>
+
+    <string name="text_text_aboutAppInfo_rps">
+    "<b>Rock-Paper-Scissors (R-P-S)</b>\n"
+    "1. Rock-Paper-scissors game is one of the classic games you can play with a friend. If you feel like to play, then you can play it through this app.\n"
+    "2. User can also select Rock-Paper-Scissors-Lizard-Spock version for more fun with more random results."
+    </string>
+
+    <string name="text_text_aboutAppInfo_savedLists">
+    "<b>Saved lists</b>\n"
+    "1. For series generations and for teams formation, user can provide input list to be used.\n"
+    "2. Each list can contain up to 1000 entries.\n"
+    "3. Saved lists can be viewed in a centralized place to manage your lists, where user can update the existing list, delete list, create new list and copy the list items."
+    </string>
+
+    <string name="text_allFeaturesInfo">
+    "All the features are crafted to be smooth, robust and hassle free. Feel free to <a href="mailto:&contactMailId;?subject=&subject;&amp;body=&body;">contact me</a> if you come across any issues."
+    </string>
+
+    <string name="text_aboutLicencingContent">
+    "<b>Licensing informations:</b>\n"
+    "Some of the Icons used in this app are from <a href="https://www.flaticon.com">www.flaticon.com</a> and designed by below mentioned designers.\n"
+    "<a href="https://www.flaticon.com/authors/freepik">Freepik</a> - Home, Random numbers, Random Passwords, Random Colors, Unique Ids, Dice, Card Picker, Teams Formation, Yes-No \n"
+    "<a href="https://www.flaticon.com/authors/mynamepong">mynamepong</a> - Flip Coin \n"
+    "<a href="https://www.flaticon.com/authors/darius-dan">Darius Dan</a> - Series Generator, R-P-S \n"
+    "<a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> - Random Dates &amp; Times, Saved Lists\n"
+    "Please visit <a href="https://www.flaticon.com">www.flaticon.com</a> for more licencing information.\n"
+    </string>
+
+    <string name="text_aboutDataPrivacyContent">
+    "<b>Data privacy:</b>\n"
+    "This application does not store any of your information anywhere outside than your device. Everything you use, and you generate out of this app stays in your device locally.\n"  
+    "The application usage details might be collected for improvisation of the app. Anytime if you feel or find any insecurities about your privacy on this app, feel free to <a href="mailto:&contactMailId;?subject=&subject;&amp;body=&body;">notify us</a> immediately so that we can try to address the same at earliest. At any point of time if you find any safety concerns, please stop using this app. Your support is always appreciated.\n"
+    "With the use of this app no harm or hazardous actions are intended, otherwise please stop using this application immediately."
+    </string>
+
+    <string name="button_contactUs">Contact us</string>
+    <string name="button_rateUs">Rate App</string>
+    <string name="button_shareApp">Share</string>
+    <string name="text_delete_list">Delete List</string>
+    <string name="delete_confirmation_msg">Are you sure to delete the list?</string>
+    <string name="but_yes">Yes</string>
+    <string name="text_list_deleted">List deleted</string>
+    <string name="too_large_to_share_error">Too large text to Share</string>
+    <string name="too_large_to_copy_error">Too large text to Copy</string>
+
+    <string name="shareapp_text">Check out the all in one super randomness application - RandomApp at:</string>
+    <string name="no_resultsTo_copy_error">No results generated to copy</string>
+    <string name="no_resultsTo_share_error">No results generated to share</string>
+    <string name="no_resultsTo_format_error">No results generated to format</string>
+</resources>

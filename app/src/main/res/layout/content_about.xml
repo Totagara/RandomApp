@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:background="@color/butBackground"
+                android:padding="10dp"
+                android:layout_weight="0.4">
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_add"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/textView_fluke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RandomApp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/textViewVersion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/text_version"
+                        android:elevation="10dp"/>
+                    <TextView
+                        android:id="@+id/textViewVersionValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/version_value"
+                        android:elevation="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="0.6"
+                android:layout_margin="10dp">
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Contact us"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:textColor="@android:color/white"
+                    android:drawablePadding="3dp"
+                    android:drawableLeft="@drawable/ic_contactus"
+                    android:background="@color/butBackground"/>
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rate App"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    android:padding="5dp"
+                    android:drawablePadding="3dp"
+                    android:textColor="@android:color/white"
+                    android:drawableLeft="@drawable/ic_rate"
+                    android:background="@color/butBackground"/>
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Share App"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:layout_margin="3dp"
+                    android:drawablePadding="3dp"
+                    android:textColor="@android:color/white"
+                    android:drawableLeft="@drawable/ic_share"
+                    android:background="@color/butBackground"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:text="@string/about_content_text" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>-->
+
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/infoButtonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:elevation="8dp"
+                android:layout_weight="0.4">
+                <!--android:background="@color/colorPrimaryDark"-->
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/app_logo"
+                    android:gravity="center"
+                    android:elevation="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"/>
+                <TextView
+                    android:id="@+id/textView_fluke"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RandomApp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+                <!--<LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+                    <TextView
+                        android:id="@+id/textViewVersion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/text_version"
+                        android:elevation="10dp"/>
+                    <TextView
+                        android:id="@+id/textViewVersionValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="10sp"
+                        android:textColor="@android:color/white"
+                        android:text="@string/version_value"
+                        android:elevation="10dp"/>
+                </LinearLayout>-->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="0.6"
+                android:layout_margin="10dp"
+                android:elevation="8dp">
+                <Button
+                    android:id="@+id/button_contactUs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/button_contactUs"
+                    android:textSize="14dp"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:textColor="@android:color/white"
+                    android:drawablePadding="3dp"
+                    android:drawableLeft="@drawable/ic_contactus"
+                    android:background="@drawable/roundedgenericbutton" />
+                <Button
+                    android:id="@+id/button_rateUs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_rateUs"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    android:padding="5dp"
+                    android:drawablePadding="3dp"
+                    android:textColor="@android:color/white"
+                    android:drawableLeft="@drawable/ic_rate"
+                    android:background="@drawable/roundedgenericbutton"/>
+                <Button
+                    android:id="@+id/button_shareApp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_shareApp"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:layout_margin="3dp"
+                    android:drawablePadding="3dp"
+                    android:textColor="@android:color/white"
+                    android:drawableLeft="@drawable/ic_share"
+                    android:background="@drawable/roundedgenericbutton"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutContentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_aboutForUsersContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="@color/tileBackground" >
+                <TextView
+                    android:id="@+id/aboutForUsersContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:text="@string/text_aboutForUsersContent" />
+            </androidx.cardview.widget.CardView>
+
+            <!--<TextView
+                android:id="@+id/aboutForUsersContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_margin"
+                android:text="@string/text_aboutForUsersContent" />-->
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView_about_appsInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="8dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="5dp"
+                app:cardBackgroundColor="@color/tileBackground" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/aboutAppInfoIntroductionContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text_margin"
+                        android:text="@string/text_aboutAppInfoIntroductionContent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <!--Random Generator Info-->
+                        <!--<TextView
+                            android:id="@+id/aboutAppInfo_randomGenerator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_aboutAppInfo_randomGenerator" />-->
+
+                        <!--Random Numbers Info-->
+                        <TextView
+                            android:id="@+id/aboutAppInfo_randomNumbers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_aboutAppInfo_randomNumbers" />
+
+                        <!--Random Passwords Info-->
+                        <TextView
+                            android:id="@+id/aboutAppInfo_randomPasswords"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_aboutAppInfo_randomPasswords" />
+
+                        <!--Dice Info-->
+                        <TextView
+                            android:id="@+id/aboutAppInfo_dice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_text_aboutAppInfo_dice" />
+
+                        <!--Random Dates & Times Info-->
+                        <TextView
+                            android:id="@+id/aboutAppInfo_randomDatesTimes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_aboutAppInfo_randomDatesTimes" />
+
+                        <!--Random Colors Info-->
+                        <TextView
+                            android:id="@+id/aboutAppInfo_randomColors"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_aboutAppInfo_randomColors" />
+
+                        <!--Card Picker Info-->
+                        <TextView
+                            android:id="@+id/aboutAppInfo_cardPicker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_text_aboutAppInfo_cardPicker" />
+
+                        <!--Flip Coin Info-->
+                        <TextView
+                            android:id="@+id/aboutAppInfo_flipcoin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_text_aboutAppInfo_flipcoin" />
+
+                        <!--Unique Ids-->
+                        <TextView
+                            android:id="@+id/aboutAppInfo_randomUUIDs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_aboutAppInfo_randomUUIDs" />
+
+                        <!--Series Generator Info-->
+                        <TextView
+                            android:id="@+id/aboutAppInfo_seriesGenerator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_text_aboutAppInfo_seriesGenerator" />
+
+                        <!--Teams Generator Info-->
+                        <TextView
+                            android:id="@+id/aboutAppInfo_teamsGenerator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_text_aboutAppInfo_teamsGenerator" />
+
+                        <!--Yes-No Info-->
+                        <TextView
+                            android:id="@+id/aboutAppInfo_yesNo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_text_aboutAppInfo_yesNo" />
+
+                        <!--R-P-S Info-->
+                        <TextView
+                            android:id="@+id/aboutAppInfo_rps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_text_aboutAppInfo_rps" />
+
+                        <!--Saved Lists Info-->
+                        <TextView
+                            android:id="@+id/aboutAppInfo_savedLists"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/text_margin"
+                            android:text="@string/text_text_aboutAppInfo_savedLists" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_aboutLicencingContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            app:cardBackgroundColor="@color/tileBackground" >
+
+        <TextView
+            android:id="@+id/aboutLicencingContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/text_aboutLicencingContent" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView_aboutDataPrivacyContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="5dp"
+            app:cardBackgroundColor="@color/tileBackground" >
+        <TextView
+            android:id="@+id/aboutDataPrivacyContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/text_aboutDataPrivacyContent" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

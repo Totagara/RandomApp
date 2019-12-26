@@ -1,0 +1,78 @@
+
+<resources>
+
+<style name="AppTheme.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>
+</style>
+
+<style name="AppTheme.NoActionBar1">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+</style>
+
+<!-- Base application theme. -->
+<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+
+    <!--Text styles-->
+    <item name="android:textSize">14sp</item>
+    <item name="android:textColor">@android:color/black</item>
+    <item name="android:fontFamily">@font/roboto_medium</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="textAllCaps">false</item>
+</style>
+
+<!--Dark mode-->
+<style name="DarkModeTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+
+    <!--Text styles-->
+    <item name="android:textSize">16sp</item>
+    <item name="android:background">@android:color/black</item>
+    <item name="android:textColor">@android:color/white</item>
+    <!--<item name="android:textAllCaps">false</item>-->
+    <item name="android:fontFamily">@font/roboto_medium</item>
+    <item name="android:textAllCaps">false</item>
+</style>
+
+
+
+<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+<style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+<style name="OptionsLayoutStyle">
+    <item name="android:layout_marginTop">5dp</item>
+    <item name="android:layout_marginLeft">5dp</item>
+    <item name="android:layout_marginRight">5dp</item>
+    <item name="android:layout_marginBottom">3dp</item>
+    <item name="android:elevation">10dp</item>
+    <item name="android:padding">5dp</item>
+</style>
+
+<style name="ResultsLayoutStyle">
+    <item name="android:layout_marginLeft">5dp</item>
+    <item name="android:layout_marginRight">5dp</item>
+    <item name="android:layout_marginBottom">3dp</item>
+    <item name="android:elevation">10dp</item>
+    <item name="android:padding">5dp</item>
+</style>
+
+<style name="HistoryLayoutStyle">
+    <item name="android:layout_marginLeft">5dp</item>
+    <item name="android:layout_marginRight">5dp</item>
+    <item name="android:layout_marginBottom">5dp</item>
+    <item name="android:elevation">10dp</item>
+    <item name="android:padding">5dp</item>
+</style>
+
+</resources>
+

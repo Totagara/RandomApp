@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.YesNoTrueFalseFragment"
+    android:background="#ffffff">
+
+    <!--Type selection layout-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center"
+        style="@style/OptionsLayoutStyle"
+        android:gravity="center_horizontal">
+
+        <TextView android:id="@+id/yesNoTrueFalseTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:text="@string/text_result_type" />
+
+        <Spinner
+            android:id="@+id/yesNoTrueFalseTypeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/yesNoTrueFalseTypeTextView"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="3dp"
+            android:minWidth="100dp"
+            android:padding="5dp"
+            android:entries="@array/yesNoTypes"
+            android:background="@drawable/roundedbutton"/>
+    </LinearLayout>
+
+    <!-- Image View layout-->
+    <LinearLayout
+        android:id="@+id/yesNoTrueFalseImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_weight="13"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/yesNoTrueFalseImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="#ffffff" />
+
+    </LinearLayout>
+
+    <!--Random card type name layout-->
+    <TextView
+        android:id="@+id/yesNoTrueFalseNameTextView"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="@string/text_result"
+        android:background="#ffffff"
+        />
+
+    <!--Generate random button layout-->
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/but_text_generate"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:background="@drawable/roundedgenericbutton" />
+
+    <!--History layout-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/resultsHistoryLayout"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:layout_margin="20dp"
+        android:background="#ffffff"/>
+</LinearLayout>

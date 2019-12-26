@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY contactMailId "contact.randomapp@gmail.com">
+    <!ENTITY subject "RandomApp - Feedback">
+    <!ENTITY body "">
+    ]>
+<resources>
+
+    <!--App names-->
+    <string name="app_name">RandomApp</string>
+    <string name="text_version">ಆವೃತ್ತಿ</string>
+    <string name="version_value">1.0.18</string>
+    <string name="app_randomGenerator">ಅನಿಶ್ಚಿತ ಉತ್ಪಾದಕ</string>
+    <string name="app_flip_coin">ನಾಣ್ಯವನ್ನು ಚಿಮ್ಮಿಸು</string>
+    <string name="app_dice">ಪಗಡೆ</string>
+    <string name="app_cardPicker">ಆಟದ ಎಲೆ ತೆಗೆಯುವುದು</string>
+    <string name="app_seriesGenerator">ಸರಣಿ ಉತ್ಪಾದಕ</string>
+    <string name="app_teamsGenerator">ತಂಡಗಳ ರಚನೆ</string>
+    <string name="app_yesNo">ಹೌದು - ಇಲ್ಲ</string>
+    <string name="app_rps">ರಾಕ್-ಪೇಪರ್-ಸೀಸರ್ಸ್</string>
+
+    <string name="app_randomNumbers">ಅನಿಶ್ಚಿತ ಸಂಖ್ಯೆಗಳು</string>
+    <string name="app_randomPasswords">ಅನಿಶ್ಚಿತ ಪಾಸ್‌ವರ್ಡ್‌ಗಳು</string>
+    <string name="app_randomDatesTimes">ಅನಿಶ್ಚಿತ ದಿನಾಂಕ &amp; ಸಮಯಗಳು</string>
+    <string name="app_randomColors">ಅನಿಶ್ಚಿತ ಬಣ್ಣಗಳು</string>
+    <string name="app_uuids">ಅನನ್ಯ ಐಡಿಗಳು</string>
+
+    <!--Menu items-->
+    <string name="menu_home">ಮುಖಪುಟ</string>
+    <string name="menu_randomGenerator">ಅನಿಶ್ಚಿತ ಉತ್ಪಾದಕ</string>
+    <string name="menu_flipCoin">ನಾಣ್ಯವನ್ನು ಚಿಮ್ಮಿಸು</string>
+    <string name="menu_dice">ಪಗಡೆ</string>
+    <string name="menu_cardPicker">ಆಟದ ಎಲೆ ತೆಗೆಯುವುದು</string>
+    <string name="menu_seriesGenerator">ಸರಣಿ ಉತ್ಪಾದಕ</string>
+    <string name="menu_divideAndAssign">ತಂಡಗಳ ರಚನೆ</string>
+    <string name="menu_yesNo">ಹೌದು - ಇಲ್ಲ</string>
+    <string name="menu_rockPaperScissors">ರಾಕ್-ಪೇಪರ್-ಸೀಸರ್ಸ್</string>
+    <string name="menu_savedLists">ಕೂಡಿಟ್ಟ ಪಟ್ಟಿಗಳು</string>
+
+    <string name="menu_randomNumbers">ಅನಿಶ್ಚಿತ ಸಂಖ್ಯೆಗಳು</string>
+    <string name="menu_randomPasswords">ಅನಿಶ್ಚಿತ ಪಾಸ್‌ವರ್ಡ್‌ಗಳು</string>
+    <string name="menu_randomDatesTimes">ಅನಿಶ್ಚಿತ ದಿನಾಂಕ &amp; ಸಮಯಗಳು</string>
+    <string name="menu_randomColors">ಅನಿಶ್ಚಿತ ಬಣ್ಣಗಳು</string>
+    <string name="menu_uuids">ಅನನ್ಯ ಐಡಿಗಳು</string>
+
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_settings">ಅಳವಡಿಕೆಗಳು</string>
+    <string name="text_language">ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="text_theme">ವಿಷಯ</string>
+    <string name="text_max_limited_to">ಗರಿಷ್ಠ ಮಿತಿ </string>
+
+    <string name="action_about">ಕುರಿತು</string>
+    <string name="action_settings">ಅಳವಡಿಕೆಗಳು</string>
+    <string name="hint_how_many">ಎಷ್ಟು</string>
+    <string name="cb_text_repeat">ಪುನರ್ವರ್ತಿಸಿ</string>
+    <string name="hint_text_results">ಫಲಿತಾಂಶಗಳು</string>
+    <string name="but_text_generate">ಉತ್ಪಾದಿಸಿ</string>
+    <string name="text_copy">ನಕಲಿಸು</string>
+    <string name="text_share">ಹಂಚಿಕೊಳ್ಳು</string>
+    <string name="text_format">ವಿನ್ಯಾಸ</string>
+    <string name="text_results">ಫಲಿತಾಂಶಗಳು</string>
+    <string name="results_copied_success_msg">ನಕಲು ಫಲಕಕ್ಕೆ ನಕಲಿಸಲಾಗಿದೆ</string>
+    <string name="value_empty_error_msg">ಮೌಲ್ಯವು ಖಾಲಿಯಾಗಿರಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+    <string name="value_greater_than_zero_error_msg">ಮೌಲ್ಯವು ಶೂನ್ಯಕ್ಕಿಂತ ಹೆಚ್ಚಿರಬೇಕು</string>
+    <string name="sort_order_not_selected_error_msg">ದಯವಿಟ್ಟು ವಿಂಗಡಣಾ ಕ್ರಮವನ್ನು ಆಯ್ಕೆ ಮಾಡಿ</string>
+    <string name="values_range_error_msg">ಮೌಲ್ಯವು %1$d ರಿಂದ %2$d ರ ವ್ಯಾಪ್ತಿಯಲ್ಲಿರಬೇಕು</string>
+    <string name="max_is_more_than_min_error_msg">ಗರಿಷ್ಠ ಮೌಲ್ಯವು ಕನಿಷ್ಠ ಮೌಲ್ಯಕ್ಕಿಂತ ಹೆಚ್ಚಿರಬೇಕು</string>
+    <string name="dialog_header_usage_notice">ಬಳಕೆಯ ಸೂಚನೆ</string>
+    <string name="button_ok">ಆಗಲಿ</string>
+    <string name="valid_input_required_error">ಸರಿಯಾದ %1$s ಅಗತ್ಯವಿದೆ</string>
+    <string name="add_list_error">%1$s ರಚಿಸಲು ದಯವಿಟ್ಟು ಪಟ್ಟಿಯನ್ನು ಸೇರಿಸಿ</string>
+    <string name="text_selected_listItems">ಆಯ್ಕೆ ಮಾಡಲಾದ ಪಟ್ಟಿಯ ವಸ್ತುಗಳು: </string>
+    <string name="text_Select_list">ಪಟ್ಟಿಯನ್ನು ಆಯ್ಕೆಮಾಡಿ:</string>
+    <string name="text_New_list">ಹೊಸ ಪಟ್ಟಿ</string>
+    <string name="text_selected_list_items">ಆಯ್ಕೆ ಮಾಡಲಾದ ಪಟ್ಟಿಯ ವಸ್ತುಗಳು: </string>
+    <string name="list_empty_msg">ಪಟ್ಟಿಯು ಖಾಲಿಯಾಗಿರಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+    <string name="text_result">ಫಲಿತಾಂಶ</string>
+    <string name="but_save">ಉಳಿಸಿ</string>
+    <string name="but_cancel">ರದ್ದುಮಾಡಿ</string>
+
+    <!--Random Generator Home-->
+    <string name="text_random_numbers">ಅನಿಶ್ಚಿತ ಸಂಖ್ಯೆಗಳು</string>
+    <string name="text_random_strings">ಅನಿಶ್ಚಿತ ಪಾಸ್‌ವರ್ಡ್‌ಗಳು</string>
+    <string name="text_random_dates_times">ಅನಿಶ್ಚಿತ ದಿನಾಂಕ &amp; ಸಮಯಗಳು</string>
+    <string name="text_random_colors">ಅನಿಶ್ಚಿತ ಬಣ್ಣಗಳು</string>
+    <string name="text_UUIDs">ಅನನ್ಯ ಗುರುತು</string>
+
+    <!--Random Numbers Generator -->
+    <string name="hint_min_range">ಕನಿಷ್ಠ ಮಿತಿ</string>
+    <string name="hint_max_range">ಗರಿಷ್ಠ ಮಿತಿ</string>
+    <string name="cb_text_decimal">ದಶಮಾಂಶ</string>
+    <string name="text_precision">ದಶಮಾಂಶ ನಿಖರತೆ:</string>
+    <string name="cb_text_sort">ವಿಂಗಡಿಸಿ</string>
+    <string name="rb_text_ascending">ಏರಿಕೆ</string>
+    <string name="rb_text_decending">ಇಳಿಕೆ</string>
+    <string name="selectPrecision">ನಿಖರತೆ ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="max_generation_limit_error_msg">ಕೇವಲ %1$d ಸಂಖ್ಯೆಗಳವರೆಗೆ ಮಾತ್ರ ಉತ್ಪಾದಿಸಬಹುದು</string>
+    <string name="generation_range_exceeds_error_msg">%1$d ಕ್ಕಿಂತ ಹೆಚ್ಚು ಅನನ್ಯ ಸಂಖ್ಯೆಗಳನ್ನು ಹೊಂದಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+    <string name="precision_1">1 (0.0)</string>
+    <string name="precision_2">2 (0.00)</string>
+    <string name="precision_3">3 (0.000)</string>
+    <string name="precision_4">4 (0.0000)</string>
+    <string name="precision_5">5 (0.00000)</string>
+    <string name="precision_6">6 (0.000000)</string>
+    <string name="precision_7">7 (0.0000000)</string>
+    <string name="precision_8">8 (0.00000000)</string>
+    <string name="precision_9">9 (0.000000000)</string>
+    <string name="precision_10">10 (0.0000000000)</string>
+
+
+    <!--Random Strings Generator -->
+    <string name="hint_min_length">ಕನಿಷ್ಠ ಉದ್ದ</string>
+    <string name="hint_max_length">ಗರಿಷ್ಠ ಉದ್ದ</string>
+    <string name="cb_text_caps_A_Z">ದೊಡ್ಡಕ್ಷರ [A-Z]</string>
+    <string name="cb_text_small_a_z">ಸಣ್ಣಕ್ಷರ [a-z]</string>
+    <string name="rb_text_digits_0_9">ಅಂಕೆಗಳು [0-9]</string>
+    <string name="cb_text_special_chars">ವಿಶೇಷ ಅಕ್ಷರಗಳು</string>
+    <string name="text_include">ಸೇರಿಸಿ:</string>
+    <string name="hint_special_chars">ವಿಶೇಷ ಅಕ್ಷರಗಳು</string>
+    <string name="hint_include_special_chars">ವಿಶೇಷ ಅಕ್ಷರಗಳನ್ನು ಸೇರಿಸಿ</string>
+    <string name="no_char_type_selected_error_msg">ಕನಿಷ್ಠ ಒಂದು ಪ್ರಕಾರದ ಚೆಕ್‌ಬಾಕ್ಸ್ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಬೇಕು</string>
+    <string name="string_len_range_error_msg">ಮೌಲ್ಯವು 1-100 ಒಳಗೆ ಇರಬೇಕು</string>
+    <string name="max_strings_generation_limit_error_msg">ಕೇವಲ %1$d ಪಠ್ಯ ಲಿಪಿಗಳನ್ನು ಮಾತ್ರ ಉತ್ಪಾದಿಸಬಹುದು</string>
+    <string name="min_special_char_required_error_msg">ವಿಶೇಷ ಅಕ್ಷರಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಿದಾಗ ಕನಿಷ್ಠ ಒಂದು ವಿಶೇಷ ಅಕ್ಷರದ ಅಗತ್ಯವಿದೆ</string>
+
+    <!--Random Dates & times Generator -->
+    <string name="max__dateTime_is_more_than_min_msg">ಅಂತಿಮ %1$sವು ಪ್ರಾರಂಭ %2$sಕ್ಕಿಂತ ಹೆಚ್ಚಾಗಿರಬೇಕು</string>
+    <string name="text_date">ದಿನಾಂಕ</string>
+    <string name="text_time">ಸಮಯ</string>
+    <string name="text_date_and_time">ದಿನಾಂಕ &amp; ಸಮಯ</string>
+    <string name="text_date_time_combinations">ದಿನಾಂಕ &amp; ಸಮಯ ಸಂಯೋಜನೆಗಳು</string>
+    <string name="text_dates">ದಿನಾಂಕಗಳು</string>
+    <string name="text_times">ಸಮಯಗಳು</string>
+    <string name="dateTime_range_exceed_error_msg">%1$d ಕ್ಕಿಂತ ಹೆಚ್ಚು ಅನನ್ಯ %2$s ಗಳನ್ನು ಹೊಂದಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+    <string name="no_date_time_selected_error">ದಿನಾಂಕ ಅಥವಾ ಸಮಯದ ಚೆಕ್‌ಬಾಕ್ಸ್ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಲೇಬೇಕು</string>
+    <string name="max_generation_limit_error_msg_dateTime">ಕೇವಲ %1$d ದಿನಾಂಕಗಳು ಅಥವಾ ಸಮಯಗಳನ್ನು ಮಾತ್ರ ಉತ್ಪಾದಿಸಬಹುದು</string>
+    <string name="cb_text_date">ದಿನಾಂಕ</string>
+    <string name="cb_text_time">ಸಮಯ</string>
+    <string name="hint_start_date">ಪ್ರಾರಂಭದ ದಿನಾಂಕ</string>
+    <string name="hint_end_date">ಅಂತಿಮ ದಿನಾಂಕ</string>
+    <string name="hint_start_time">ಪ್ರಾರಂಭದ ಸಮಯ</string>
+    <string name="hint_end_time">ಅಂತಿಮ ಸಮಯ</string>
+
+    <!--Random colors Generator -->
+    <string name="individual_color_copy_msg">ಪ್ರತ್ಯೇಕ ಬಣ್ಣವನ್ನು ನಕಲಿಸಲು ಬಣ್ಣದ ಕೋಡ್ ಅನ್ನು  ಒತ್ತಿ</string>
+    <string name="no_colors_generated_error">ಹಂಚಿಕೊಳ್ಳಲು ಯಾವುದೇ ಬಣ್ಣವನ್ನು ರಚಿಸಲಾಗಿಲ್ಲ</string>
+    <string name="colors_range_exceed_error_msg">%1$d ಕ್ಕಿಂತ ಹೆಚ್ಚು ಬಣ್ಣಗಳನ್ನು ಹೊಂದಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+    <string name="color_code_copied_msg">%1$s ಬಣ್ಣದ ಕೋಡ್ ನಕಲಿಸಲಾಗಿದೆ</string>
+    <string name="text_color_code">ಬಣ್ಣದ ಕೋಡ್</string>
+
+    <!--UUIDs Generator -->
+    <string name="max_generation_limit_error_msg_UUIDs">ಕೇವಲ %1$d ಅನನ್ಯ ಗುರುತುಗಳನ್ನು ಮಾತ್ರ ಉತ್ಪಾದಿಸಬಹುದು</string>
+
+    <!--Flip coin -->
+    <string name="result_heads">Heads</string>
+    <string name="result_tails">Tails</string>
+    <string name="text_select_coin">ನಾಣ್ಯವನ್ನು ಆರಿಸಿ:</string>
+    <string name="text_flip_coin">ನಾಣ್ಯವನ್ನು ಚಿಮ್ಮಿಸು</string>
+    <string name="text_indian_coin">ಭಾರತೀಯ ನಾಣ್ಯ</string>
+    <string name="text_american_coin">ಅಮೇರಿಕದ ನಾಣ್ಯ</string>
+    <string name="text_canadian_coin">ಕೆನಡಾ ನಾಣ್ಯ</string>
+
+    <!--Dice -->
+    <string name="result_total_msg">ಒಟ್ಟು: %1$d</string>
+    <string name="text_dice_count">ಎಷ್ಟು ಪಗಡೆಗಳು:</string>
+    <string name="selectNumberofDices">ಪಗಡೆಗಳ ಸಂಖ್ಯೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="text_roll_dice">ಪಗಡೆಗಳನ್ನು ಉರುಳಿಸಿ</string>
+    <string name="number_of_dice_1">1</string>
+    <string name="number_of_dice_2">2</string>
+    <string name="number_of_dice_3">3</string>
+    <string name="number_of_dice_4">4</string>
+    <string name="number_of_dice_5">5</string>
+    <string name="number_of_dice_6">6</string>
+    <string name="number_of_dice_7">7</string>
+    <string name="number_of_dice_8">8</string>
+    <string name="number_of_dice_9">9</string>
+
+    <!-- card picker -->
+    <string name="cards_over_msg">ಆಟದ ಎಲೆಗಳ ಕಟ್ಟು ಖಾಲಿಯಾಗಿದೆ. ಎಲೆಗಳನ್ನು ಬೆರೆಸಿ ಮರುಹೊಂದಿಸಲು ಸರಿ ಬಟನ್ ಒತ್ತಿ.</string>
+    <string name="cards_over_header">ಆಟದ ಎಲೆಗಳು ಮುಗಿದಿವೆ</string>
+    <string name="cardname_spade">ಸ್ಪೇಡ್</string>
+    <string name="cardname_club">ಕ್ಲಬ್</string>
+    <string name="cardname_diamond">ಡೈಮಂಡ್</string>
+    <string name="cardname_heart">ಹಾರ್ಟ್</string>
+    <string name="cardname_joker">ಜೋಕರು</string>
+    <string name="cardname_ace">ಎಕ್ಕ</string>
+    <string name="cardname_jack">ಜಾಕಿ</string>
+    <string name="cardname_queen">ರಾಣಿ</string>
+    <string name="cardname_king">ರಾಜ</string>
+    <string name="exclude_generated_cards_msg">ತೆಗೆದ ಕಾರ್ಡ್‌ಗಳನ್ನು ಹೊರತುಪಡಿಸಿ</string>
+    <string name="text_select_deck">ಎಲೆಗಳ ಕಟ್ಟನ್ನು ಆಯ್ಕೆಮಾಡಿ:</string>
+    <string name="text_selected_card">ಆಟದ ಎಲೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ</string>
+    <string name="text_generate_card">ಆಟದ ಎಲೆಯನ್ನು ಉತ್ಪಾದಿಸಿ</string>
+    <string name="text_cards_52">52 ಎಲೆಗಳು</string>
+    <string name="text_cards_54">54 ಎಲೆಗಳು(2J)</string>
+    <string name="text_cards_56">56 ಎಲೆಗಳು(4J)</string>
+
+    <!-- Series generation -->
+    <string name="text_series">ಸರಣಿಗಳು</string>
+    <string name="series_size_morethan_list_items_error">ಸರಣಿ ಗಾತ್ರವು ಆಯ್ದ ಪಟ್ಟಿ ವಸ್ತುಗಳಿಗಿಂತ ಹೆಚ್ಚಿರಬಾರದು</string>
+    <string name="max_generation_limit_error_msg_series_generation">ಕೇವಲ 10 ಸರಣಿಗಳನ್ನು ಮಾತ್ರ ಉತ್ಪಾದಿಸಬಹುದು</string>
+    <string name="series_range_exceed_error_msg">%1$d ಕ್ಕಿಂತ ಹೆಚ್ಚು ಸರಣಿಗಳನ್ನು ಹೊಂದಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+    <string name="text_how_many_series">ಎಷ್ಟು ಸರಣಿಗಳು</string>
+    <string name="text_items_per_series">ಪ್ರತಿ ಸರಣಿಯ ವಸ್ತುಗಳ ಸಂಖ್ಯೆ</string>
+    <string name="text_exclude_same_items_set">ಒಂದೇ ಬಗೆಯ ವಸ್ತುಗಳಿರುವ ಸರಣಿಗಳನ್ನು ಹೊರತುಪಡಿಸಿ</string>
+    <string name="text_exclude_generated_items_for_subsequent_sets"> ರಚಿಸಲಾದ ವಸ್ತುಗಳನ್ನು ನಂತರದ ಸರಣಿಗಳಿಂದ ಹೊರಗಿಡಿ</string>
+
+    <!-- divide and assign -->
+    <string name="text_teams">ತಂಡ</string>
+    <string name="team_size_morethan_list_items_error">ತಂಡದ ಗಾತ್ರವು ಆಯ್ದ ಪಟ್ಟಿ ವಸ್ತುಗಳಿಗಿಂತ ಹೆಚ್ಚಿರಬಾರದು</string>
+    <string name="number_0f_teams__morethan_list_items_error">ತಂಡಗಳ ಸಂಖ್ಯೆ ಆಯ್ದ ಪಟ್ಟಿ ವಸ್ತುಗಳಿಗಿಂತ ಹೆಚ್ಚಿರಬಾರದು</string>
+    <string name="text_how_many_teams">ಎಷ್ಟು ತಂಡಗಳು</string>
+    <string name="text_members_per_teams">ತಂಡದ ಗಾತ್ರ</string>
+
+    <!-- Yes-No -->
+    <string name="result_yes">ಹೌದು</string>
+    <string name="result_no">ಇಲ್ಲ</string>
+    <string name="result_true">ಸರಿ</string>
+    <string name="result_false">ತಪ್ಪು</string>
+    <string name="text_result_type">ಫಲಿತಾಂಶದ ಬಗೆ:</string>
+    <string name="text_yes_no">ಹೌದು - ಇಲ್ಲ</string>
+    <string name="text_true_false">ಸರಿ-ತಪ್ಪು</string>
+
+    <!-- Rock-Paper_scissors -->
+    <string name="result_rock">ರಾಕ್</string>
+    <string name="result_paper">ಪೇಪರ</string>
+    <string name="result_scissors">ಸೀಸರ್ಸ್</string>
+    <string name="result_lizard">ಲಿಜರ್ಡ್</string>
+    <string name="result_spock">ಸ್ಪೋಕ್</string>
+    <string name="text_rps">R-P-S</string>
+    <string name="text_rpsls">R-P-S-L-S</string>
+
+    <!-- Lists -->
+    <string name="list_updated_success_msg">ಪಟ್ಟಿ ಯಶಸ್ವಿಯಾಗಿ ನವೀಕರಿಸಲಾಗಿದೆ</string>
+    <string name="list_updated_error_msg">ಪಟ್ಟಿಯನ್ನು ನವೀಕರಿಸುವಾಗ ದೋಷ ಸಂಭವಿಸಿದೆ</string>
+    <string name="ListAdditionSuccessMessage">ಪಟ್ಟಿ ಯಶಸ್ವಿಯಾಗಿ ಸೇರಿಸಲಾಗಿದೆ</string>
+    <string name="ListAdditionFailedMessage">ಪಟ್ಟಿಯನ್ನು ರಚಿಸುವಾಗ ದೋಷ ಸಂಭವಿಸಿದೆ</string>
+    <string name="empty_list_name_error">ಹೆಸರು ಖಾಲಿಯಾಗಿರಲು ಸಾಧ್ಯವಿಲ್ಲ</string>
+    <string name="no_list_items_error">ಪಟ್ಟಿಯಲ್ಲಿ ಕನಿಷ್ಠ ಒಂದು ವಸ್ತು ನಮೂದಿಸಬೇಕು</string>
+
+    <string name="text_listName">ಪಟ್ಟಿ ಹೆಸರು</string>
+    <string name="text_addItem">ಪಟ್ಟಿ ಅಂಶ ಸೇರಿಸಿ</string>
+    <string name="text_listName_colon">ಪಟ್ಟಿ ಹೆಸರು:</string>
+
+    <string name="but_viewSavedLists">ಉಳಿಸಿದ ಪಟ್ಟಿಗಳನ್ನು ವೀಕ್ಷಿಸಿ</string>
+    <string name="text_listHolder">ಪಟ್ಟಿ ವಿವರ</string>
+    <string name="text_my_lists">ನನ್ನ ಪಟ್ಟಿಗಳು</string>
+
+
+    <!--Settings-->
+    <string name="text_light_theme">Light theme</string>
+    <string name="text_dark_theme">Dark theme</string>
+    <string name="text_about">ಕುರಿತು</string>
+
+    <!-- new Strings -->
+    <string name="text_last_updated">ಕೊನೆಯ ತಿದ್ದುಪಡಿ:</string>
+    <string name="text_items">ಅಂಶಗಳು</string>
+    <string name="label_series">ಸರಣಿ</string>
+    <string name="text_dates_and_times">ದಿನಾಂಕಗಳು ಮತ್ತು ಸಮಯಗಳು</string>
+    <string name="text_random">ಅನಿಶ್ಚಿತ</string>
+    <string name="text_generating">ಉತ್ಪಾದಿಸಲಾಗುತ್ತಿದೆ</string>
+    <string name="text_generating_decimals">ದಶಮಾಂಶ ಸಂಖ್ಯೆಗಳನ್ನು ಉತ್ಪಾದಿಸಲಾಗುತ್ತಿದೆ: </string>
+    <string name="text_generating_integers">ಪೂರ್ಣಾಂಕ ಸಂಖ್ಯೆಗಳನ್ನು ಉತ್ಪಾದಿಸಲಾಗುತ್ತಿದೆ: </string>
+    <string name="text_generating_teams">ಅನಿಶ್ಚಿತ ತಂಡಗಳನ್ನು ಉತ್ಪಾದಿಸಲಾಗುತ್ತಿದೆ: </string>
+    <string name="text_generating_series">ಅನಿಶ್ಚಿತ ಸರಣಿಗಳನ್ನು ಉತ್ಪಾದಿಸಲಾಗುತ್ತಿದೆ: </string>
+    <string name="text_generating_strings">ಅನಿಶ್ಚಿತ ಪಠ್ಯಲಿಪಿಗಳನ್ನು ಉತ್ಪಾದಿಸಲಾಗುತ್ತಿದೆ: </string>
+    <string name="text_generating_UUIDs">ಅನನ್ಯ ಗುರುತುಗಳನ್ನು ಉತ್ಪಾದಿಸಲಾಗುತ್ತಿದೆ: </string>
+    <string name="text_formatting">ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗುತ್ತಿದೆ</string>
+    <string name="text_formatting_results">ಫಲಿತಾಂಶಗಳನ್ನು ವಿನ್ಯಾಸಗೊಳಿಸಲಾಗುತ್ತಿದೆ </string>
+
+    <string name="text_aboutForUsersContent">
+    "ಮೊದಲನೆಯದಾಗಿ - ನೀವು ಇದನ್ನು ಓದುತ್ತಿದ್ದರೆ ನೀವು ಇಲ್ಲಿಯವರೆಗೆ ಬಂದು ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಅನ್ವೇಷಿಸಿ ಉಪಯೋಗಿಸುತ್ತಿರುವುದಕ್ಕೆ ನೀಡಿರುವ ನಿಮ್ಮ ಸಮಯ ಮತ್ತು ಬೆಂಬಲಕ್ಕೆ ಧನ್ಯವಾದಗಳು."
+    "ನೀವು ಈ ಆಪ್ಲಿಕೇಷನ್ಗೆ  ಸಂಬಂಧಿಸಿದ ಯಾವುದೇ ಸುಧಾರಣೆಗಳು, ಸಲಹೆಗಳು, ಸರಿಪಡಿಸಬೇಕಾದ ದೋಷಗಳು, ಹೊಸ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು  ಸೇರಿಸಲು, ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಅನುವಾದಗಳಲ್ಲಿ ಯಾವುದೇ ಲೋಪವಿದ್ದರೆ ಅಥವಾ ಆಪ್ಲಿಕೇಷನ್ಗೆ ಸಂಬಂಧಿಸಿದ ಯಾವುದಾದರೂ ತಿದ್ದುಪಡಿಗಳನ್ನು ಮಾಡಬೇಕಾದರೆ ದಯವಿಟ್ಟು <a href="mailto:&contactMailId;?subject=&subject;&amp;body=&body;"> ನನ್ನನ್ನು ಸಂಪರ್ಕಿಸಿ.</a>.\n"
+    "ನಾನು ಪ್ರಸ್ತುತ ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನ್ನು ಹೆಚ್ಚಿನ ಭಾಷೆಗಳಿಗೆ ಲಭ್ಯವಾಗುವಂತೆ ಮಾಡಲು, ಸಹಾಯ ಮಾಡಲಿಚ್ಚಿಸುವ ಸ್ವಯಂಸೇವಕರನ್ನು ಹುಡುಕುತ್ತಿದ್ದೇನೆ. ನಿಮ್ಮ ಸಮಯ ಮತ್ತು ಬೆಂಬಲಕ್ಕೆ ಮತ್ತೊಮ್ಮೆ ಧನ್ಯವಾದಗಳು."
+    </string>
+
+    <string name="text_aboutAppInfoIntroductionContent">
+    "<b>ಅಪ್ಲಿಕೇಶನ್ ಮಾಹಿತಿ:</b>\n"
+    "ಈ ಅಪ್ಲಿಕೇಶನ್ ಅನಿಶ್ಚಿತ ವಿಷಯಗಳ ಬಗ್ಗೆ ಕುರಿತದ್ದಾಗಿದ್ದು, ಇದು ಕೆಲವು ದಿನನಿತ್ಯದ ಕಾರ್ಯಗಳಿಗೆ ಅನ್ವಯಿಸಬಹುದಾದ ಹಲವಾರು ವೈಶಿಷ್ಟ್ಯಗಳಿಂದ ತುಂಬಿರುತ್ತದೆ. ಈ ಅಪ್ಲಿಕೇಶನ್ ವೈಶಿಷ್ಟ್ಯಗಳನ್ನು ಕೆಳಗೆ ವಿವರಿಸಲಾಗಿದೆ."
+    </string>
+
+    <string name="text_aboutAppInfo_randomNumbers">
+    "<b>ಅನಿಶ್ಚಿತ ಸಂಖ್ಯೆಗಳು</b>\n"
+    "1. ಬಳಕೆದಾರರು ಅನಿಶ್ಚಿತ ಸಂಖ್ಯೆಗಳನ್ನು ರಚಿಸಬಹುದು. ಈ ಸಂಖ್ಯೆಗಳು ಪೂರ್ಣ ಸಂಖ್ಯೆಗಳು ಅಥವಾ ದಶಮಾಂಶ ಸಂಖ್ಯೆಗಳಾಗಿರಬಹುದು.\n"
+    "2. ದಶಮಾಂಶ ಸಂಖ್ಯೆಗಳ ಉತ್ಪಾದನೆಗೆ, ಬಳಕೆದಾರರು 10 ದಶಮಾಂಶ ಬಿಂದುಗಳವರೆಗೆ ನಿಖರತೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು.\n"
+    "3. ರಚಿಸಿದ ಫಲಿತಾಂಶಗಳನ್ನು ಏರಿಕೆ ಅಥವಾ ಇಳಿಕೆ ಕ್ರಮದಲ್ಲಿ ವಿಂಗಡಿಸಬಹುದು.\n"
+    "4. ಒಂದೇ ಸಮಯದಲ್ಲಿ 50000 ಅನಿಶ್ಚಿತ ಸಂಖ್ಯೆಗಳ ವರೆಗೆ ರಚಿಸಬಹುದಾಗಿದೆ.\n"
+    "5. ಬಳಕೆದಾರರಿಗೆ ಪುನರಾವರ್ತನೀಯ ಸಂಖ್ಯೆಗಳು ಅಥವಾ ಅನನ್ಯ ಸಂಖ್ಯೆಗಳನ್ನು ಉತ್ಪಾದಿಸುವ ಆಯ್ಕೆಯ ಸೌಲಭ್ಯವಿದೆ.\n"
+    "6. ರಚಿಸಿದ ಎಲ್ಲಾ ಫಲಿತಾಂಶಗಳನ್ನು ನಕಲಿಸಬಹುದು, ಹಂಚಿಕೊಳ್ಳಬಹುದು, ಅಲ್ಪವಿರಾಮದಿಂದ ಬೇರ್ಪಡಿಸಿದ ಸ್ವರೂಪದಲ್ಲಿ ಅಥವಾ ಪ್ರತಿ ಫಲಿತಾಂಶವನ್ನು ಹೊಸ ಸಾಲಿನಲ್ಲಿರುವ ಪಟ್ಟಿ ಸ್ವರೂಪದಲ್ಲಿರುವಂತೆ ವಿನ್ಯಾಸ ಮಾಡಬಹುದು."
+    </string>
+
+    <string name="text_aboutAppInfo_randomPasswords">
+    "<b>ಅನಿಶ್ಚಿತ ಪಾಸ್‌ವರ್ಡ್‌ಗಳು</b>\n"
+    "1. ಬಳಕೆದಾರರು ಅನಿಶ್ಚಿತ ಪಾಸ್‌ವರ್ಡ್‌ಗಳನ್ನು ರಚಿಸಬಹುದು, ಇದರಲ್ಲಿ ಪ್ರತಿ ಪಾಸ್‌ವರ್ಡ್ 100 ಅಕ್ಷರಗಳವರೆಗೆ ಉದ್ದವನ್ನು ಹೊಂದಿರಬಹುದು.\n"
+    "2. ಬಳಕೆದಾರರು ಪಾಸ್‌ವರ್ಡ್‌ಗಳ ಉದ್ದಕ್ಕಾಗಿ ಕನಿಷ್ಠ ಮತ್ತು ಗರಿಷ್ಠ ಮಿತಿಯನ್ನು ನೀಡಬಹುದು.\n"
+    "3. ಪಾಸ್‌ವರ್ಡ್‌ಗಳು ಆಂಗ್ಲ ಭಾಷೆಯ ದೊಡ್ಡ ಅಕ್ಷರಗಳು, ಸಣ್ಣ ಅಕ್ಷರಗಳು, ಅಂಕೆಗಳು ಮತ್ತು ವಿಶೇಷ ಅಕ್ಷರಗಳ ಯಾವುದೇ ಸಂಯೋಜನೆಯನ್ನು ಒಳಗೊಂಡಿರಬಹುದು.\n"
+    "4. ಬಳಕೆದಾರರು ಪಾಸ್‌ವರ್ಡ್‌ಗಳ ಉತ್ಪಾದನೆಗೆ ವಿಶೇಷ ಅಕ್ಷರಗಳನ್ನು ನಿರ್ದಿಷ್ಟಪಡಿಸಬಹುದು.\n"
+    "5. ಒಂದೇ ಸಮಯದಲ್ಲಿ 10000 ಅನನ್ಯ ಪಾಸ್‌ವರ್ಡ್‌ಗಳ ವರೆಗೆ ರಚಿಸಬಹುದು.\n"
+    "6. ರಚಿಸಿದ ಎಲ್ಲಾ ಫಲಿತಾಂಶಗಳನ್ನು ನಕಲಿಸಬಹುದು, ಹಂಚಿಕೊಳ್ಳಬಹುದು, ಅಲ್ಪವಿರಾಮದಿಂದ ಬೇರ್ಪಡಿಸಿದ ಸ್ವರೂಪದಲ್ಲಿ ಅಥವಾ ಪ್ರತಿ ಫಲಿತಾಂಶವನ್ನು ಹೊಸ ಸಾಲಿನಲ್ಲಿರುವ ಪಟ್ಟಿ ಸ್ವರೂಪದಲ್ಲಿರುವಂತೆ ವಿನ್ಯಾಸ ಮಾಡಬಹುದು."
+    </string>
+
+    <string name="text_text_aboutAppInfo_dice">
+    "<b>ಪಗಡೆ ಉರುಳಿಸುವುದು</b>\n"
+    "1. ಪಗಡೆಗಳನ್ನು ಉರುಳಿಸಲು ಯಾವಾಗಲೂ ಮಜವಾಗಿರುತ್ತದೆ. ನಿಮಗೆ ಬೇಗನೆ ಪಗಡೆಗಳು ಸಿಗದಿದ್ದರೆ, ಚಿಂತಿಸಬೇಡಿ, ಈ ಅಪ್ಲಿಕೇಶನ್ ಬಳಸಿ ನಿಮ್ಮ ಮೊಬೈಲ್ ನಲ್ಲಿ ಪಗಡೆಗಳನ್ನು ಉರುಳಿಸುವುದನ್ನು ಅನುಕರಿಸಬಹುದು.\n"
+    "2. ಪ್ರತಿ ಬಾರಿ ಒಟ್ಟಿಗೆ 9 ಪಗಡೆಗಳನ್ನು ಉರುಳಿಸುವ ಸೌಲಭ್ಯವಿದೆ.\n"
+    "3. ಬಳಕೆದಾರರು ಪ್ರತ್ಯೇಕ ಪಗಡೆಗಳ ಫಲಿತಾಂಶಗಳನ್ನು ಮತ್ತು ಎಲ್ಲ ಪಗಡೆ ದಾಳಗಳ ಒಟ್ಟು ಮೊತ್ತವನ್ನು ನೋಡಬಹುದು."
+    </string>
+
+    <string name="text_aboutAppInfo_randomDatesTimes">
+    "<b>ಅನಿಶ್ಚಿತ ದಿನಾಂಕಗಳು ಮತ್ತು ಸಮಯಗಳು</b>\n"
+    "1. ಬಳಕೆದಾರರು ಅನಿಶ್ಚಿತ ದಿನಾಂಕಗಳು ಮತ್ತು ಸಮಯಗಳನ್ನು ನಿಮ್ಮ ಆಯ್ಕೆಯ ವ್ಯಾಪ್ತಿಯಲ್ಲಿ ರಚಿಸಬಹುದು.\n"
+    "2. ಒಂದೇ ಸಮಯದಲ್ಲಿ 50000 ಅನನ್ಯ ದಿನಾಂಕಗಳು ಮತ್ತು ಸಮಯಗಳ ವರೆಗೆ ರಚಿಸಬಹುದು.\n"
+    "3. ರಚಿಸಿದ ಎಲ್ಲಾ ಫಲಿತಾಂಶಗಳನ್ನು ನಕಲಿಸಬಹುದು, ಹಂಚಿಕೊಳ್ಳಬಹುದು, ಅಲ್ಪವಿರಾಮದಿಂದ ಬೇರ್ಪಡಿಸಿದ ಸ್ವರೂಪದಲ್ಲಿ ಅಥವಾ ಪ್ರತಿ ಫಲಿತಾಂಶವನ್ನು ಹೊಸ ಸಾಲಿನಲ್ಲಿರುವ ಪಟ್ಟಿ ಸ್ವರೂಪದಲ್ಲಿರುವಂತೆ ವಿನ್ಯಾಸ ಮಾಡಬಹುದು."
+    </string>
+
+    <string name="text_aboutAppInfo_randomColors">
+    "<b>ಅನಿಶ್ಚಿತ ಬಣ್ಣಗಳು</b>\n"
+    "1. ಬಳಕೆದಾರರು ಅನನ್ಯ ಬಣ್ಣಗಳನ್ನು ಉತ್ತಮವಾಗಿ ಪ್ರದರ್ಶಿಸಲಾದ ಅಂಚುಗಳಲ್ಲಿ ಕಾಣುವಂತೆ ರಚಿಸಬಹುದು.\n"
+    "2. ರಚಿಸಲಾದ ಪ್ರತಿಯೊಂದು ಅಥವಾ ಎಲ್ಲಾ ಬಣ್ಣಗಳ ಹೆಕ್ಸಾಡೆಸಿಮಲ್ ಬಣ್ಣ ಸಂಕೇತಗಳನ್ನು ನಕಲಿಸಬಹುದು\n"
+    "3. ಒಂದೇ ಸಮಯದಲ್ಲಿ 50 ಅನನ್ಯ ಬಣ್ಣಗಳ ತನಕ ರಚಿಸಬಹುದು."
+    </string>
+
+    <string name="text_text_aboutAppInfo_cardPicker">
+    "<b>ಆಟದ ಎಲೆ ತೆಗೆಯುವುದು</b>\n"
+    "1. ಬಳಕೆದಾರರು ಆಯ್ದ ಎಲೆಗಳ ಕಟ್ಟಿನಿಂದ ಅನಿಶ್ಚಿತವಾಗಿ ಕಾರ್ಡ್ ಆಯ್ಕೆ ಮಾಡಬಹುದು.\n"
+    "2. ಬಳಕೆದಾರರು 3 ವಿಭಿನ್ನ ಎಲೆ ಕಟ್ಟುಗಳ ಆಯ್ಕೆ ಮಾಡಬಹುದು (52 ಕಾರ್ಡ್‌ಗಳು, 2 ಜೋಕರ್‌ಗಳು ಸೇರಿದಂತೆ 54 ಕಾರ್ಡ್‌ಗಳು, 4 ಜೋಕರ್‌ಗಳು ಸೇರಿದಂತೆ 56 ಕಾರ್ಡ್‌ಗಳು).\n"
+    "3. ಬಳಕೆದಾರರು ಪ್ರತಿ ಬಾರಿಯೂ ಅನಿಶ್ಚಿತ ಕಾರ್ಡ್ ಅನ್ನು ಸಂಪೂರ್ಣ ಎಲೆ ಕಟ್ಟಿನಲ್ಲಿರುವ ಎಲ್ಲಾ ಕಾರ್ಡ್‌ಗಳೊಂದಿಗೆ ಪದೇ ಪದೇ ಪಡೆದುಕೊಳ್ಳಬಹುದು ಅಥವಾ ಬಳಕೆದಾರರು ಎಲೆ ಕಟ್ಟಿನಲ್ಲಿ ಉಳಿದ ಕಾರ್ಡ್‌ಗಳಿಂದ ಮಾತ್ರ ಅನಿಶ್ಚಿತ ಕಾರ್ಡ್ ಅನ್ನು ಪಡೆದುಕೊಳ್ಳಬಹುದು (ಈಗಾಗಲೇ ಆಯ್ಕೆ ಮಾಡಿದ ಕಾರ್ಡ್‌ಗಳನ್ನು ನಂತರದ ಆಯ್ಕೆಗಳಿಗಾಗಿ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ)."
+    </string>
+
+    <string name="text_text_aboutAppInfo_flipcoin">
+    "<b>ನಾಣ್ಯವನ್ನು ಚಿಮ್ಮಿಸು</b>\n"
+    "1. ಅನಿಶ್ಚಿತ ಫಲಿತಾಂಶಗಳನ್ನು ಪಡೆಯಲು ಬಳಕೆದಾರರು ನಾಣ್ಯವನ್ನು ಚಿಮ್ಮುವ ರೀತಿಯಲ್ಲಿ ಅನುಕರಿಸಬಹುದು. ಇದು ನಿಜವಾದ ನಾಣ್ಯವನ್ನು ಚಿಮ್ಮುವಂತೆ ಭಾಸವಾಗಬಹುದು.\n"
+    "2. ನಾಣ್ಯವನ್ನು ಚಿಮ್ಮಲು ಬಳಕೆದಾರರು ವಿವಿಧ ದೇಶದ ನಾಣ್ಯಗಳನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು."
+    </string>
+
+    <string name="text_aboutAppInfo_randomUUIDs">
+    "<b>ಅನನ್ಯ ಐಡಿಗಳು</b>\n"
+    "1. ಬಳಕೆದಾರರು ಹೆಚ್ಚು ವಿಶಿಷ್ಟವಾದ ಗುರುತಿಸುವಿಕೆಗಳ ಅಗತ್ಯವಿರುವಾಗ, ವಿಶಿಷ್ಟ ಐಡಿಗಳನ್ನು ರಚಿಸಬಹುದು.\n"
+    "2. ಒಂದೇ ಸಮಯದಲ್ಲಿ 10000 ಅನನ್ಯ ಐಡಿಗಳ ವರೆಗೆ ಉತ್ಪಾದಿಸಬಹುದು.\n"
+    "3. ರಚಿಸಿದ ಎಲ್ಲಾ ಫಲಿತಾಂಶಗಳನ್ನು ನಕಲಿಸಬಹುದು, ಹಂಚಿಕೊಳ್ಳಬಹುದು, ಅಲ್ಪವಿರಾಮದಿಂದ ಬೇರ್ಪಡಿಸಿದ ಸ್ವರೂಪದಲ್ಲಿ ಅಥವಾ ಪ್ರತಿ ಫಲಿತಾಂಶವನ್ನು ಹೊಸ ಸಾಲಿನಲ್ಲಿರುವ ಪಟ್ಟಿ ಸ್ವರೂಪದಲ್ಲಿರುವಂತೆ ವಿನ್ಯಾಸ ಮಾಡಬಹುದು."
+    </string>
+
+    <string name="text_text_aboutAppInfo_seriesGenerator">
+    "<b>ಸರಣಿ ಉತ್ಪಾದಕ ಮತ್ತು ಬೆರಸುವುಕೆ</b>\n"
+    "1. ಯಾವುದೇ ಆಯ್ದ ಪಟ್ಟಿಯನ್ನು ಅನಿಶ್ಚಿತವಾಗಿ ಬೆರೆಸಬಹುದು.\n"
+    "2. ಬಳಕೆದಾರರು ಇಡೀ ಪಟ್ಟಿಯಿಂದ ಅನಿಶ್ಚಿತವಾಗಿ ಒಂದೇ ವಸ್ತುವನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು.(ಲಕ್ಕಿ ಡ್ರಾ ತರಹ)\n"
+    "3. ಆಯ್ದ ಪಟ್ಟಿಯಿಂದ ಯಾವುದೇ ಸರಣಿ ಗಾತ್ರದ(ಪ್ರತಿ ಸರಣಿಯಲ್ಲಿರುವ ವಸ್ತುಗಳ ಸಂಖ್ಯೆ) ಅನೇಕ ಅನಿಶ್ಚಿತ ಸರಣಿಗಳನ್ನು ರಚಿಸಬಹುದು.\n"
+    "4. ಒಂದೇ ತರಹದ ವಸ್ತುಗಳನ್ನು ಹೊಂದಿರುವ ಸರಣಿಗಳನ್ನು ಬಳಕೆದಾರರು ಹೊರಗಿಡಬಹುದು.\n"
+    "5. ನಂತರದ ಸರಣಿಗಳ ರಚನೆಗಾಗಿ ಈಗಾಗಲೇ ರಚಿಸಲಾದ ಸರಣಿಯ ಭಾಗವಾಗಿರುವ ವಸ್ತುಗಳನ್ನು ಬಳಕೆದಾರರು ಹೊರಗಿಡಬಹುದು.\n"
+    "6. ಸರಣಿಯನ್ನು ರಚಿಸುವಾಗ ಬಳಕೆದಾರರು ಆಯ್ದ ಪಟ್ಟಿಯನ್ನು ತ್ವರಿತವಾಗಿ ನೋಡಬಹುದು ಮತ್ತು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಹೊಸ ಪಟ್ಟಿಯನ್ನು ಕೂಡ ಸೇರಿಸಬಹುದು.\n"
+    "7. ರಚಿಸಿದ ಎಲ್ಲಾ ಫಲಿತಾಂಶಗಳನ್ನು ನಕಲಿಸಬಹುದು ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಬಹುದು."
+    </string>
+
+    <string name="text_text_aboutAppInfo_teamsGenerator">
+    "<b>ತಂಡಗಳ ರಚನೆ</b>\n"
+    "1. ಬಳಕೆದಾರರು ಆಯ್ದ ಪಟ್ಟಿಯಿಂದ ತಂಡಗಳನ್ನು ರಚಿಸಬಹುದು.\n"
+    "2. ಬಳಕೆದಾರರು ತಂಡದ ಗಾತ್ರವನ್ನು (ಪ್ರತಿ ತಂಡದ ಸದಸ್ಯರ ಸಂಖ್ಯೆ) ಅಥವಾ ರಚಿಸಬೇಕಾದ ತಂಡಗಳ ಸಂಖ್ಯೆಯನ್ನು ಒದಗಿಸುವ ಅವಕಾಶವಿದೆ.\n"
+    "3. ಬಳಕೆದಾರರು ತಂಡಗಳ ರಚನೆಗಾಗಿ ಬಳಸಿದ ಆಯ್ದ ಪಟ್ಟಿಯ ವಿವರಗಳನ್ನು ಇಲ್ಲಿಯೇ ನೋಡಬಹುದು.\n"
+    "4. ರಚಿಸಿದ ಎಲ್ಲಾ ಫಲಿತಾಂಶಗಳನ್ನು ನಕಲಿಸಬಹುದು ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಬಹುದು."
+    </string>
+
+    <string name="text_text_aboutAppInfo_yesNo">
+    "<b>ಹೌದು-ಇಲ್ಲ ಅಥವಾ ಸರಿ-ತಪ್ಪು</b>\n"
+    "1. ನೀವು ಗೊಂದಲಕ್ಕೊಳಗಾದಾಗ ಮತ್ತು ಯಾವುದೇ ನಿರ್ಧಾರಕ್ಕೆ ಬರಬೇಕಾದಾಗ ನಿಮ್ಮ ಪರವಾಗಿ ನಿಮ್ಮ ಮೊಬೈಲ್ ಅನ್ನು ಬಳಸಲು ಇಚ್ಚಿಸುವುದಾದರೆ ಹೌದು-ಇಲ್ಲ ಅಥವಾ ಸರಿ-ತಪ್ಪುಗಳ ಅದೃಷ್ಟ ಪ್ರಯತ್ನಿಸಲು ಹೌದು-ಇಲ್ಲ ಅನಿಶ್ಚಿತ ಫಲಿತಾಂಶಗಳ ಸೌಲಭ್ಯವನ್ನು ಬಳಸಬಹುದು.\n"
+    "2. ಅನಿಶ್ಚಿತ ಫಲಿತಾಂಶಗಳಿಗಾಗಿ ನೀವು ಸರಿ-ತಪ್ಪು ಅಥವಾ ಹೌದು-ಇಲ್ಲ ಆಯ್ಕೆಯನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು."
+    </string>
+
+    <string name="text_text_aboutAppInfo_rps">
+    "<b>ರಾಕ್-ಪೇಪರ್-ಸೀಸರ್ಸ್</b>\n"
+    "1. ರಾಕ್-ಪೇಪರ್-ಸೀಸರ್ಸ್ ಆಟವು ನಿಮ್ಮ ಸ್ನೇಹಿತನೊಂದಿಗೆ ಆಡಬಹುದಾದ ಕ್ಲಾಸಿಕ್ ಆಟಗಳಲ್ಲಿ ಒಂದಾಗಿದೆ. ನೀವು ಆಡಲು ಬಯಸಿದರೆ, ನೀವು ಅದನ್ನು ಈ ಅಪ್ಲಿಕೇಶನ್ ಮೂಲಕ ಆಡಬಹುದು.\n"
+    "2. ಬಳಕೆದಾರರು ಹೆಚ್ಚು ಅನಿಶ್ಚಿತ ಫಲಿತಾಂಶಗಳೊಂದಿಗೆ ಹೆಚ್ಚು ವಿನೋದಕ್ಕಾಗಿ ರಾಕ್-ಪೇಪರ್-ಸೀಸರ್ಸ್-ಲಿಜರ್ಡ್-ಸ್ಪೋಕ್ ಆವೃತ್ತಿಯನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು."
+    </string>
+
+    <string name="text_text_aboutAppInfo_savedLists">
+    "<b>ಕೂಡಿಟ್ಟ ಪಟ್ಟಿಗಳು</b>\n"
+    "1. ಸರಣಿಗಳ ಉತ್ಪಾದನೆ ಮತ್ತು ತಂಡಗಳ ರಚನೆಗಾಗಿ, ಬಳಕೆದಾರರು ಪಟ್ಟಿಯನ್ನು ಒದಗಿಸಬಹುದು.\n"
+    "2. ಪ್ರತಿಯೊಂದು ಪಟ್ಟಿಯು 1000 ವರೆಗೆ ವಸ್ತುಗಳನ್ನು ಒಳಗೊಂಡಿರಬಹುದು.\n"
+    "3. ನಿಮ್ಮ ಪಟ್ಟಿಗಳ ನಿರ್ವಹಣೆಗಳಿಗಾಗಿ ಕೂಡಿಟ್ಟ ಪಟ್ಟಿಗಳನ್ನು ಕೇಂದ್ರೀಕೃತ ಸ್ಥಳದಲ್ಲಿ ವೀಕ್ಷಿಸಬಹುದು, ಇಲ್ಲಿ ಬಳಕೆದಾರರು ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ಪಟ್ಟಿಯನ್ನು ನವೀಕರಿಸಬಹುದು, ಪಟ್ಟಿಯನ್ನು ಅಳಿಸಬಹುದು, ಹೊಸ ಪಟ್ಟಿಯನ್ನು ರಚಿಸಬಹುದು ಮತ್ತು ಪಟ್ಟಿಯ ವಸ್ತುಗಳನ್ನು ನಕಲಿಸಬಹುದು."
+    </string>
+
+    <string name="text_allFeaturesInfo">
+    "ಎಲ್ಲಾ ವೈಶಿಷ್ಟ್ಯಗಳು ಸುಗಮ, ಉತ್ತಮ ಸಾಮರ್ಥ್ದ ಮತ್ತು ತೊಂದರೆ ಮುಕ್ತವಾಗಿರುವಂತೆ ರಚಿಸಲಾಗಿದೆ. ಯಾವುದೇ ಸಮಸ್ಯೆಗಳಿಗೆ <a href="mailto:&contactMailId;?subject=&subject;&amp;body=&body;">ನನ್ನನ್ನು ಸಂಪರ್ಕಿಸಲು</a> ಹಿಂಜರಿಯದಿರಿ."
+    </string>
+
+    <string name="text_aboutLicencingContent">
+    "<b> ಪರವಾನಗಿ ಮಾಹಿತಿ:</b>\n"
+    "ಈ ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ಬಳಸಲಾದ ಕೆಲವು ಐಕಾನ್‌ಗಳನ್ನು <a href="https://www.flaticon.com"> www.flaticon.com </a> ನಿಂದ ಪಡೆಯಲಾಗಿದ್ದು ಮತ್ತು ಈ ಕೆಳಗಿನ ವಿನ್ಯಾಸಕರು ವಿನ್ಯಾಸಗೊಳಿಸಿರುತ್ತಾರೆ.\n"
+    "<a href="https://www.flaticon.com/authors/freepik">Freepik</a> - ಮುಖಪುಟ, ಅನಿಶ್ಚಿತ ಸಂಖ್ಯೆಗಳು, ಅನಿಶ್ಚಿತ ಪಾಸ್‌ವರ್ಡ್‌ಗಳು, ಅನಿಶ್ಚಿತ ಬಣ್ಣಗಳು, ಅನನ್ಯ ಐಡಿಗಳು, ಪಗಡೆ, ಆಟದ ಎಲೆ ತೆಗೆಯುವುದು, ತಂಡಗಳ ರಚನೆ, ಹೌದು - ಇಲ್ಲ\n"
+    "<a href="https://www.flaticon.com/authors/mynamepong">mynamepong</a> - ನಾಣ್ಯವನ್ನು ಚಿಮ್ಮಿಸು\n"
+    "<a href="https://www.flaticon.com/authors/darius-dan">Darius Dan</a> - ಸರಣಿ ಉತ್ಪಾದಕ, R-P-S \n"
+    "<a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> - ಅನಿಶ್ಚಿತ ದಿನಾಂಕಗಳು ಮತ್ತು ಸಮಯಗಳು, ಕೂಡಿಟ್ಟ ಪಟ್ಟಿಗಳು\n"
+    "ಹೆಚ್ಚಿನ ಪರವಾನಗಿ ಮಾಹಿತಿಗಾಗಿ ದಯವಿಟ್ಟು <a href="https://www.flaticon.com"> www.flaticon.com </a> ಗೆ ಭೇಟಿ ನೀಡಿ."
+    </string>
+
+    <string name="text_aboutDataPrivacyContent">
+    "<b> ಮಾಹಿತಿ ಗೌಪ್ಯತೆ:</b>\n"
+    "ಈ ಅಪ್ಲಿಕೇಶನ್, ನಿಮ್ಮ ಮೊಬೈಲ್ ಹೊರತಾಗಿ, ಬೇರೆಡೆ ಅಥವಾ ಹೊರಗಡೆ ಎಲ್ಲಿಯೂ ನಿಮ್ಮ ಯಾವುದೇ ಮಾಹಿತಿಯನ್ನು ಸಂಗ್ರಹಿಸುವುದಿಲ್ಲ. ನೀವು ಬಳಸುವ ಮತ್ತು ನೀವು ಈ ಅಪ್ಲಿಕೇಶನ್‌ನಿಂದ ಉತ್ಪಾದಿಸುವ ಎಲ್ಲಾ ಫಲಿತಾಂಶಗಳು ಹಾಗು ಮಾಹಿತಿಗಳು ಸ್ಥಳೀಯವಾಗಿ ನಿಮ್ಮ ಮೊಬೈಲ್ ನಲ್ಲಿಯೇ ಉಳಿಯುತ್ತವೆ.\n"
+    "ಈ ಅಪ್ಲಿಕೇಶನ್‌ನ ಸುಧಾರಣೆಗೆ ಅಪ್ಲಿಕೇಶನ್ ಬಳಕೆಯ ವಿವರಗಳನ್ನು ಸಂಗ್ರಹಿಸಬಹುದು ಆದರೆ ವೈಯಕ್ತಿಕ ಮಾಹಿತಿಯನ್ನಲ್ಲ. ಈ ಅಪ್ಲಿಕೇಶನ್‌ ನಿಂದ ನಿಮ್ಮ ಗೌಪ್ಯತೆಯ ಬಗ್ಗೆ ಯಾವುದೇ ಅಭದ್ರತೆಗಳನ್ನು ನೀವು ಭಾವಿಸಿದರೆ ಅಥವಾ ಕಂಡುಕೊಂಡರೆ, ತಕ್ಷಣ <a href="mailto:&contactMailId;?subject=&subject;&amp;body=&body;">ನಮಗೆ ತಿಳಿಸಲು</a> ಹಿಂಜರಿಯಬೇಡಿ ಇದರಿಂದ ನಾವು ಬೇಗನೆ ಅದನ್ನು ಸರಿಪಡಿಸಲು ಪ್ರಯತ್ನಿಸಬಹುದು. ನಿಮ್ಮ ಗೌಪ್ಯತೆಯ ಸುರಕ್ಷತಾ ಕಾಳಜಿಗಳ ಬಗ್ಗೆ ನಿಮಗೆ ಅನುಮಾನವಾದರೆ, ದಯವಿಟ್ಟು ಈ ಅಪ್ಲಿಕೇಶನ್ ಬಳಸುವುದನ್ನು ನಿಲ್ಲಿಸಿ. ನಿಮ್ಮ ಬೆಂಬಲವನ್ನು ಯಾವಾಗಲೂ ಪ್ರಶಂಸಿಸಲಾಗುತ್ತದೆ.\n"
+    "ಈ ಅಪ್ಲಿಕೇಶನ್‌ನ ಬಳಕೆಯಿಂದ ಯಾವುದೇ ಅಪಾಯ ಅಥವಾ ಹಾನಿಯುಂಟು ಮಾಡುವ ಉದ್ದೇಶ ಇರುವುದಿಲ್ಲ. ಇಲ್ಲವಾದಲ್ಲಿ ದಯವಿಟ್ಟು ಈ ಅಪ್ಲಿಕೇಶನ್ ಬಳಕೆಯನ್ನು ಕೂಡಲೇ ನಿಲ್ಲಿಸಬೇಕಾಗಿ ವಿನಂತಿ."
+    </string>
+
+    <string name="button_contactUs">ನಮ್ಮನ್ನು ಸಂಪರ್ಕಿಸಿ</string>
+    <string name="button_rateUs">ರೇಟ್ ಮಾಡಿ</string>
+    <string name="button_shareApp">ಹಂಚಿಕೊಳ್ಳಿ</string>
+    <string name="text_delete_list">ಪಟ್ಟಿಯನ್ನು ಅಳಿಸಿ</string>
+    <string name="delete_confirmation_msg">ಪಟ್ಟಿಯನ್ನು ಅಳಿಸುವುದು ಖಚಿತವೇ?</string>
+    <string name="but_yes">ಹೌದು</string>
+    <string name="text_list_deleted">ಪಟ್ಟಿ ಅಳಿಸಲಾಗಿದೆ</string>
+    <string name="too_large_to_share_error">ದೊಡ್ಡ ಪಠ್ಯವನ್ನು ಹಂಚಿಕೊಳ್ಳಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ</string>
+    <string name="too_large_to_copy_error">ದೊಡ್ಡ ಪಠ್ಯವನ್ನು ನಕಲಿಸಲು ಸಾಧ್ಯವಾಗುತ್ತಿಲ್ಲ</string>
+    <string name="shareapp_text">ನಮ್ಮ ಅಪ್ಲಿಕೇಶನ್ RandomApp ಅನ್ನು ಅನ್ವೇಷಿಸಲು ಮತ್ತು ಹಂಚಿಕೊಳ್ಳಲು ಈ ಲಿಂಕ್ ಬಳಸಿ :</string>
+    <string name="no_resultsTo_copy_error">ನಕಲಿಸಲು ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="no_resultsTo_share_error">ಹಂಚಿಕೊಳ್ಳಲು ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ಲಭ್ಯವಿಲ್ಲ</string>
+    <string name="no_resultsTo_format_error">ವಿನ್ಯಾಸಗೊಳಿಸಲು ಯಾವುದೇ ಫಲಿತಾಂಶಗಳು ಲಭ್ಯವಿಲ್ಲ</string>
+</resources>
